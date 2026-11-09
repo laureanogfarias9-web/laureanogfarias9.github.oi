@@ -1,0 +1,987 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142b49"><meta name="description" content="EduGestión: plataforma de organización, seguimiento y administración académica 2026–2027."><meta name="color-scheme" content="light"><title>EduGestión | Edición completa 2026–2027</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fb;color:#18263e;font:14px system-ui,Arial}.layout{display:grid;grid-template-columns:235px 1fr;min-height:100vh}.side{background:#14233d;color:white;padding:22px 15px}.brand{font-size:22px;font-weight:800;margin-bottom:20px}.brand span{color:#9fb5ff}.nav{display:block;width:100%;text-align:left;background:none;border:0;color:#dbe5f5;padding:11px;border-radius:8px;font:inherit;cursor:pointer}.nav.active,.nav:hover{background:#2a4065}.side select{width:100%;margin-top:10px;padding:10px;background:#203554;color:white;border:1px solid #50617b;border-radius:8px}.main{padding:24px;min-width:0}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.top h1{margin:0;font-size:25px}.saved{background:#e5f5eb;color:#137747;border-radius:20px;padding:7px 12px;font-size:12px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}.card,.panel{background:white;border:1px solid #e2e8f0;border-radius:12px;padding:16px}.card small,.muted{color:#718096}.num{font-size:27px;font-weight:800}.green{color:#168653}.red{color:#c43d4d}.blue{color:#2673b8}.yellow{color:#a56c0c}.notice{padding:12px;background:#edf4ff;border:1px solid #d8e5f6;border-radius:9px;color:#405575;margin-bottom:14px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.barrow{display:grid;grid-template-columns:145px 1fr 35px;gap:8px;align-items:center;margin:12px 0;font-size:12px}.bar{height:8px;background:#edf1f7;border-radius:9px;overflow:hidden}.fill{height:100%;background:#168653}.btn{border:0;background:#4263eb;color:white;padding:9px 12px;border-radius:8px;cursor:pointer;font:inherit}.btn.gray{background:#eaf0f8;color:#34445e}.btn.redbtn{background:#fff0f0;color:#a62e3a}.tools{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.tools input,.tools select{padding:9px;border:1px solid #dce3ed;border-radius:8px;background:white}.tools input{flex:1;min-width:170px}.tablewrap{overflow:auto;border:1px solid #e2e8f0;border-radius:9px}table{border-collapse:collapse;width:100%;min-width:900px;background:white}th{text-align:left;background:#f6f8fb;color:#65748b;font-size:11px;padding:10px}td{padding:7px;border-top:1px solid #e8edf3}td input,td select{padding:10px;border:1px solid #cbd5e1;border-radius:7px;width:100%;min-width:90px;font:inherit;background:#fff;color:#18263e}input,select,textarea,button{touch-action:manipulation}input,select,textarea{font-size:16px} .student-card{background:#fff;border:1px solid #dce4ee;border-radius:12px;padding:14px;margin:12px 0}.fields{display:flex;flex-direction:column;gap:10px}.field{display:flex;flex-direction:column;gap:5px;min-width:0}.field label{font-size:12px;font-weight:700;color:#53647d}.field input,.field select,.field textarea{width:100%;min-width:0;padding:11px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:#18263e;font:inherit;font-size:16px}.field textarea{min-height:72px;resize:vertical}.field.full{width:100%}.student-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.student-head strong{font-size:15px}.statusline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}@media(max-width:600px){.fields{display:flex;flex-direction:column}.field.full{width:100%}.student-card{padding:11px}.tools input{min-width:100%}}td .wide{min-width:155px}.badge{display:inline-block;border-radius:20px;padding:3px 7px;font-size:10px;margin-top:3px}.ok{background:#e5f5ec;color:#137747}.bad{background:#ffebed;color:#b42d3b}.pend{background:#fff3d9;color:#96600c}.none{background:#e7f2fc;color:#236da8}.rev{background:#f0eaff;color:#7042a6}.courses{display:flex;flex-direction:column;gap:8px}.course{display:block;width:100%;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:14px;text-align:left;cursor:pointer}.course b,.course small{display:block}.course small{color:#718096;margin-top:5px} .student{padding:12px 0;border-top:1px solid #e5eaf1}.grade-table-wrap{overflow-x:auto;border:1px solid #dbe3ee;border-radius:12px;background:#fff;max-width:100%;-webkit-overflow-scrolling:touch}.grade-table{border-collapse:separate;border-spacing:0;width:100%;min-width:1650px;background:#fff}.grade-table th{position:sticky;top:0;z-index:2;background:#edf2fa;color:#43536d;text-align:left;font-size:12px;padding:12px 9px;white-space:nowrap;border-bottom:1px solid #dbe3ee}.grade-table td{padding:8px;border-bottom:1px solid #edf1f6;vertical-align:top}.grade-table tr:hover td{background:#fafcff}.grade-table input,.grade-table select,.grade-table textarea{width:100%;min-width:90px;padding:9px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;color:#18263e;font:inherit;font-size:14px}.grade-table .name-cell input{min-width:145px;font-weight:650}.grade-table .msg-cell select{min-width:210px}.grade-table .obs-cell textarea,.grade-table .owe-cell textarea{min-width:190px;min-height:58px;resize:vertical}.grade-table .status-cell{min-width:145px}.grade-table .action-cell{min-width:95px}.scroll-hint{font-size:12px;color:#64748b;margin:8px 0 12px}.foot{font-size:11px;color:#8290a4;margin-top:18px}@media(max-width:800px){.layout{grid-template-columns:1fr}.side{padding:12px}.main{padding:13px}.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.top h1{font-size:20px}}
+
+/* Mejora visual de la planilla horizontal */
+body{background:linear-gradient(135deg,#f4f7ff 0%,#eef3fa 100%)}
+.side{background:linear-gradient(180deg,#14233d 0%,#1c3558 100%);box-shadow:5px 0 24px rgba(20,35,61,.08)}
+.brand{letter-spacing:.2px}.brand span{color:#a9c4ff}
+.main{max-width:1700px;width:100%;margin:0 auto}
+.top{padding:5px 2px 14px;border-bottom:1px solid #e3eaf4}
+.top h1{letter-spacing:-.5px}
+.saved{font-weight:700;box-shadow:0 3px 10px rgba(19,119,71,.08)}
+.panel,.card{border-color:#e1e8f2;border-radius:16px;box-shadow:0 8px 24px rgba(35,55,90,.045)}
+.notice{border-radius:12px;background:linear-gradient(110deg,#edf4ff,#f5f8ff);border-color:#dce8fb;padding:14px 16px}
+.btn{border-radius:9px;font-weight:650;box-shadow:0 2px 5px rgba(66,99,235,.12);transition:transform .12s,filter .12s}
+.btn:hover{filter:brightness(.97);transform:translateY(-1px)}
+.tools input,.tools select{border-radius:10px;min-height:42px}
+.grade-table-wrap{border-radius:14px;box-shadow:0 5px 18px rgba(35,55,90,.04)}
+.grade-table{min-width:1770px}
+.grade-table th{background:#eaf0fa;color:#354965;padding:14px 10px;font-weight:750;letter-spacing:.15px}
+.grade-table td{padding:10px 8px}
+.grade-table tr:nth-child(even) td{background:#fbfcff}
+.grade-table tr:hover td{background:#f1f6ff}
+.grade-table input,.grade-table select,.grade-table textarea{border-color:#d5deeb;border-radius:9px;transition:border-color .12s,box-shadow .12s}
+.grade-table input:focus,.grade-table select:focus,.grade-table textarea:focus{outline:none;border-color:#6688ef;box-shadow:0 0 0 3px rgba(66,99,235,.12)}
+.grade-table .msg-cell select{min-width:245px;background:#f7f9ff;border-color:#cbd8f4}
+.grade-table .obs-cell textarea,.grade-table .owe-cell textarea{min-width:205px;min-height:68px;line-height:1.4}
+.grade-table .status-cell{min-width:165px;vertical-align:middle}
+.badge{font-size:11px;font-weight:750;padding:6px 10px;letter-spacing:.1px}
+.badge.ok{background:#dcf7e8;color:#087443}.badge.bad{background:#ffe3e6;color:#a91f32}
+.badge.pend{background:#fff0cf;color:#895600}.badge.none{background:#e1f1ff;color:#155b94}
+.badge.rev{background:#eee7ff;color:#6335a1}
+.status-cell .badge{display:inline-flex;align-items:center;justify-content:center;min-width:115px}
+.scroll-hint{padding:8px 11px;background:#f7f9fd;border-radius:8px}
+@media(max-width:800px){.main{padding:12px}.top{align-items:flex-start}.top h1{font-size:21px}.grade-table{min-width:1770px}}
+
+
+/* Paneles e informes adicionales */
+.metric-note{font-size:12px;color:#718096;margin-top:4px}.alert-list{display:grid;gap:8px}.alert-item{padding:10px 12px;border-radius:10px;background:#fff8e8;border:1px solid #f3dfb3;color:#77520b}.history-list{max-height:460px;overflow:auto}.history-item{padding:10px 0;border-bottom:1px solid #e8edf3}.report-table{width:100%;border-collapse:collapse;min-width:650px}.report-table th,.report-table td{padding:10px;border-bottom:1px solid #e8edf3;text-align:left}.report-table th{background:#f4f7fc;color:#50617b}.status-select{min-width:145px;font-weight:700}.status-select.st-ok{background:#e5f5ec;color:#137747}.status-select.st-bad{background:#ffebed;color:#b42d3b}.status-select.st-pend{background:#fff3d9;color:#96600c}.status-select.st-none{background:#e7f2fc;color:#236da8}.status-select.st-rev{background:#f0eaff;color:#7042a6}
+@media print{.side,.tools,.btn,.saved,.scroll-hint,.foot{display:none!important}.layout{display:block}.main{padding:0;max-width:none}.panel,.card{box-shadow:none;border:0}.grade-table-wrap{overflow:visible}.grade-table{min-width:0;width:100%;font-size:9px}.grade-table th,.grade-table td{padding:4px}.grade-table input,.grade-table select,.grade-table textarea{border:0;padding:2px;font-size:9px;min-width:0}.grade-table .msg-cell select{min-width:0}.grade-table .obs-cell textarea,.grade-table .owe-cell textarea{min-width:0}}
+
+/* Identidad visual y portada institucional */
+:root{--navy:#122642;--navy2:#1b3b62;--accent:#5578e8;--ink:#172943;--muted:#71819a;--line:#e4eaf3;--surface:#fff}
+body{color:var(--ink);background:radial-gradient(circle at 85% 0%,#e6edff 0,transparent 28%),linear-gradient(135deg,#f5f7fc,#edf2f9)}
+.side{position:sticky;top:0;height:100vh;overflow:auto;padding:25px 16px;background:linear-gradient(165deg,#10223c 0%,#18385e 65%,#244b75 100%)}
+.brand{display:flex;align-items:center;gap:10px;font-size:23px;letter-spacing:-.7px;padding:4px 7px 18px;border-bottom:1px solid rgba(255,255,255,.13)}
+.brand:before{content:'EG';display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#91b4ff,#5578e8);color:#10223c;font-size:13px;font-weight:900;box-shadow:0 7px 18px #07172b66}
+.nav{margin:4px 0;padding:12px 13px;border:1px solid transparent;border-radius:10px;font-weight:600;transition:.18s}
+.nav:hover,.nav.active{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.1);transform:translateX(2px)}
+.main{padding:30px clamp(16px,3vw,42px) 40px;max-width:1800px}
+.top{margin-bottom:22px}.top small{font-weight:800;letter-spacing:1.5px;font-size:10px;color:#7586a0!important}.top h1{font-size:28px;letter-spacing:-.8px;margin-top:5px}
+.saved{white-space:nowrap}
+.intro-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.45fr .55fr;gap:20px;align-items:center;padding:28px 30px;margin:0 0 18px;border-radius:20px;color:#fff;background:linear-gradient(115deg,#142b49 0%,#244b78 62%,#4168a2 100%);box-shadow:0 16px 38px rgba(25,49,83,.16)}
+.intro-hero:after{content:'EG';position:absolute;right:5%;top:-42px;font-size:180px;font-weight:900;letter-spacing:-15px;color:#ffffff0c;pointer-events:none}
+.intro-copy,.intro-side{position:relative;z-index:1}.intro-kicker{font-size:10px;letter-spacing:1.8px;font-weight:800;color:#b9d0ff;text-transform:uppercase}.intro-hero h2{font-size:clamp(25px,3vw,36px);line-height:1.1;letter-spacing:-1px;margin:10px 0}.intro-hero p{max-width:720px;color:#e0eaff;line-height:1.65;margin:0}.intro-side{justify-self:end;text-align:right}.intro-mark{width:94px;height:94px;border:1px solid #ffffff44;border-radius:24px;display:grid;place-items:center;background:#ffffff12;font-size:35px;margin-left:auto}.intro-side small{display:block;color:#d1e0fa;margin-top:10px}
+.quick-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.quick-actions .btn{background:#fff;color:#18375c;box-shadow:none}.quick-actions .btn.secondary{background:#ffffff18;color:#fff;border:1px solid #ffffff45}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:22px 2px 10px}.section-heading h2{font-size:17px;margin:0}.section-heading p{font-size:12px;color:var(--muted);margin:4px 0 0}
+.card{transition:transform .16s,box-shadow .16s}.card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(35,55,90,.08)}
+.unit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.unit-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;box-shadow:0 5px 18px #23375a08}.unit-card h3{margin:0 0 5px;font-size:15px}.unit-card .unit-meta{font-size:11px;color:var(--muted);margin-bottom:12px}.unit-row{display:grid;grid-template-columns:minmax(120px,1fr) 105px minmax(150px,1.2fr);gap:8px;align-items:center;padding:8px 0;border-top:1px solid #edf1f6}.unit-row input{min-width:0;width:100%;padding:9px;border:1px solid #d5deeb;border-radius:8px;font:inherit}.unit-row .unit-student{font-size:12px;font-weight:650}
+@media(max-width:850px){.side{position:relative;height:auto}.intro-hero{grid-template-columns:1fr;padding:22px}.intro-side{display:none}.unit-grid{grid-template-columns:1fr}.main{padding:16px}.top h1{font-size:23px}}
+@media print{.intro-hero,.quick-actions{display:none!important}}
+
+
+/* Ajustes finales: escritorio, notebook, tablet y celular */
+:focus-visible{outline:3px solid #8aa7ff!important;outline-offset:2px}
+button,select,input,textarea{font-family:inherit}
+button:disabled{opacity:.55;cursor:not-allowed}
+@media(min-width:1200px){
+  .layout{grid-template-columns:260px minmax(0,1fr)}
+  .side{padding:28px 18px}
+  .main{padding:30px 34px}
+  .grade-table{min-width:1770px}
+}
+@media(min-width:1600px){
+  .layout{grid-template-columns:280px minmax(0,1fr)}
+  .main{padding:34px 42px}
+  .intro-hero{padding:34px 38px}
+}
+@media(max-width:850px){
+  .side{position:relative;top:auto;height:auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px;overflow:visible}
+  .side .brand{width:100%;margin-bottom:5px}
+  .side .nav{display:inline-flex;align-items:center;width:auto;flex:0 0 auto;white-space:nowrap;padding:10px 12px}
+  .side select{width:auto;min-width:190px;flex:1;margin:5px 0}
+  .side p{margin:5px 8px!important}
+  .main{max-width:none}
+}
+@media(max-width:560px){
+  .side{padding:12px;gap:5px}
+  .side .nav{font-size:12px;padding:9px 10px}
+  .main{padding:12px}
+  .top{flex-wrap:wrap;align-items:flex-start}
+  .top>div:last-child{margin-left:auto}
+  .cards{gap:8px}
+  .card{padding:12px}
+  .num{font-size:23px}
+  .intro-hero{padding:19px;border-radius:15px}
+  .intro-hero h2{font-size:25px}
+  .quick-actions{display:flex;flex-wrap:wrap;gap:7px}
+  .quick-actions .btn{flex:1 1 135px}
+  .grade-table-wrap{border-radius:10px}
+  .scroll-hint{line-height:1.5}
+  .tools{gap:7px}
+  .tools .btn{flex:1 1 auto}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+
+/* Pulido final de EduGestión */
+:root{scroll-behavior:smooth}
+button,input,select,textarea{font:inherit}
+button{touch-action:manipulation}
+input,select,textarea{min-height:39px}
+textarea{min-height:72px;resize:vertical}
+.panel,.card,.unit-card,.intro-hero{box-shadow:0 8px 26px rgba(20,43,73,.055)}
+.panel{border:1px solid #e5ebf3}
+.course:hover,.btn:hover{filter:brightness(.98);transform:translateY(-1px)}
+.course,.btn{transition:transform .15s ease,filter .15s ease,box-shadow .15s ease}
+.grade-table th{position:sticky;top:0;z-index:2}
+.grade-table td{vertical-align:middle}
+.grade-table input:focus,.grade-table textarea:focus,.grade-table select:focus{border-color:#6f91d8;box-shadow:0 0 0 3px rgba(91,129,205,.14)}
+.saved{font-weight:700}
+.saved.is-error{color:#b42318!important}
+.saved.is-saving{color:#9a6700!important}
+@media(min-width:1100px){.grade-table{min-width:1800px}.main{max-width:none}}
+@media(max-width:850px){.side{position:relative;top:auto;height:auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px;overflow:visible}.side .brand{width:100%;margin-bottom:5px}.side .nav{display:inline-flex;align-items:center;width:auto;flex:0 0 auto;white-space:nowrap;padding:10px 12px}.side select{width:auto;min-width:190px;flex:1;margin:5px 0}.side p{margin:5px 8px!important}.main{max-width:none}}
+@media(max-width:560px){.side{padding:12px;gap:5px}.side .nav{font-size:12px;padding:9px 10px}.main{padding:12px}.top{flex-wrap:wrap;align-items:flex-start}.top>div:last-child{margin-left:auto}.cards{gap:8px}.card{padding:12px}.num{font-size:23px}.intro-hero{padding:19px;border-radius:15px}.intro-hero h2{font-size:25px}.quick-actions{display:flex;flex-wrap:wrap;gap:7px}.quick-actions .btn{flex:1 1 135px}.grade-table-wrap{border-radius:10px}.scroll-hint{line-height:1.5}.tools{gap:7px}.tools .btn{flex:1 1 auto}}
+@media print{.side,.top .saved,.tools,.quick-actions,.action-cell,.foot,.scroll-hint{display:none!important}.layout{display:block!important}.main{padding:0!important;max-width:none!important}.grade-table-wrap{overflow:visible!important;border:0!important}.grade-table{min-width:0!important;width:100%!important;font-size:8pt!important}.grade-table th,.grade-table td{padding:4px!important}.grade-table textarea,.grade-table input,.grade-table select{border:0!important;box-shadow:none!important;background:transparent!important;color:#111!important}.panel{box-shadow:none!important;border:0!important}.intro-hero{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Sesión independiente de convivencia, temas vistos y seguimiento */
+.conv-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.conv-tab{border:1px solid #dbe4f0;background:#f7f9fd;color:#30435f;padding:12px;border-radius:11px;font:inherit;font-weight:750;cursor:pointer;text-align:left}
+.conv-tab.active{background:#eaf0ff;border-color:#9bb1f4;color:#284db8;box-shadow:0 0 0 2px #e1e9ff}
+.conv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.conv-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.conv-form .full{grid-column:1/-1}
+.conv-form label{display:flex;flex-direction:column;gap:5px;color:#52627a;font-size:12px;font-weight:750}
+.conv-form input,.conv-form select,.conv-form textarea{width:100%;padding:11px;border:1px solid #d2dce9;border-radius:9px;background:#fff;color:#18263e;font:inherit;font-size:15px}
+.conv-form textarea{min-height:75px;resize:vertical}
+.conv-entry{border:1px solid #e3eaf3;border-radius:11px;padding:12px;margin:9px 0;background:#fbfcff}
+.conv-entry-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.conv-entry p{margin:7px 0 0;color:#52627a;white-space:pre-wrap}
+.conv-entry small{color:#7b899d}
+.conv-empty{padding:16px;text-align:center;border:1px dashed #d4deeb;border-radius:10px;color:#7a8799}
+@media(max-width:700px){.conv-tabs{grid-template-columns:1fr}.conv-grid{grid-template-columns:1fr}.conv-form{grid-template-columns:1fr}.conv-form .full{grid-column:auto}}
+@media print{.conv-form,.conv-tabs,.conv-entry button{display:none!important}}
+
+
+/* Ajustes de usabilidad de la versión completa */
+.conv-entry-head button{font-size:12px;padding:7px 10px}
+.conv-entry-head{justify-content:flex-start}
+.conv-entry-head b{margin-right:auto}
+.conv-entry p{line-height:1.5}
+.conv-form input:focus,.conv-form select:focus,.conv-form textarea:focus{outline:none;border-color:#6688ef;box-shadow:0 0 0 3px rgba(66,99,235,.12)}
+@media(max-width:700px){.conv-entry-head{align-items:flex-start}.conv-entry-head b{width:100%}.conv-entry-head button{flex:1}}
+
+
+/* Planilla horizontal ampliada de unidades */
+.unit-toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.unit-toolbar select{min-width:220px;flex:1}
+.unit-toolbar #unitSearch{min-width:170px;flex:1}
+.unit-heading{align-items:center;gap:12px;flex-wrap:wrap}
+.unit-actions{display:flex;gap:8px;flex-wrap:wrap}
+.unit-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}
+.unit-summary>div{background:#f6f8fc;border:1px solid #e5ebf3;border-radius:11px;padding:12px}
+.unit-summary small{display:block;color:#718096;font-size:11px;font-weight:700}
+.unit-summary b{display:block;color:#20324d;font-size:21px;margin-top:5px}
+.unit-table-wrap{width:100%;overflow:auto;border:1px solid #dfe6ef;border-radius:12px;background:#fff;max-height:72vh}
+.unit-table{border-collapse:separate;border-spacing:0;min-width:max-content;width:100%;font-size:13px}
+.unit-table th,.unit-table td{border-right:1px solid #e6ebf2;border-bottom:1px solid #e6ebf2;padding:9px;vertical-align:top}
+.unit-table thead th{position:sticky;top:0;z-index:3;background:#f1f5fb;text-align:left}
+.unit-table .unit-sticky-col{position:sticky;left:0;z-index:4;background:#fff;min-width:175px;max-width:220px}
+.unit-table thead .unit-sticky-col{z-index:5;background:#eaf0f8}
+.unit-student-name{font-weight:750;color:#263a56;vertical-align:middle!important}
+.unit-col-head{min-width:205px;width:205px}
+.unit-head-tools{display:flex;align-items:center;gap:5px;margin-bottom:7px}
+.unit-title-input{font-weight:800;color:#233d66;background:#e7eefb!important;border:1px solid #cdd9ec!important}
+.unit-meta-input{display:block;width:100%;margin-top:5px;padding:7px 8px;border:1px solid #d8e0eb;border-radius:7px;background:#fff;font-size:11px;min-height:32px}
+.unit-delete{border:0;border-radius:7px;background:#fff0f0;color:#b42318;font-size:19px;min-width:30px;height:30px;cursor:pointer}
+.unit-cell{min-width:205px;background:#fff}
+.unit-cell-label{display:block;color:#7a8798;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin:1px 0 4px}
+.unit-grade-input,.unit-obs-input{display:block;width:100%;min-width:145px;padding:8px;border:1px solid #d8e0eb;border-radius:7px;background:#fff;font-size:13px;margin-bottom:7px}
+.unit-grade-input{font-weight:750}
+.unit-obs-input{font-size:11px}
+.unit-average-head,.unit-average{position:sticky;right:86px;background:#f8fafc!important;z-index:2;min-width:86px;text-align:center;font-weight:800}
+.unit-status-head{position:sticky;right:0;background:#f8fafc!important;z-index:3;min-width:86px;text-align:center}
+.unit-pill{display:inline-block;padding:5px 8px;border-radius:20px;font-size:11px;font-weight:800;white-space:nowrap}
+.unit-pill.ok{background:#e8f7ed;color:#187443}
+.unit-pill.review{background:#fff1e8;color:#a84b17}
+.unit-pill.none{background:#edf2f7;color:#64748b}
+.unit-empty{text-align:center;color:#718096;padding:22px!important}
+.unit-footer-note{margin-top:12px;color:#68778d;font-size:12px;line-height:1.5}
+@media(max-width:700px){
+ .unit-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .unit-toolbar>*{flex:1 1 100%!important;width:100%}
+ .unit-table-wrap{max-height:65vh}
+ .unit-table .unit-sticky-col{min-width:145px}
+}
+@media print{
+ .unit-toolbar,.unit-actions,.unit-delete,.unit-footer-note,.scroll-hint{display:none!important}
+ .unit-table-wrap{overflow:visible;max-height:none;border:0}
+ .unit-table{font-size:8pt}
+ .unit-table th,.unit-table td{padding:4px}
+ .unit-table thead th,.unit-table .unit-sticky-col,.unit-average-head,.unit-average,.unit-status-head{position:static}
+}
+
+
+/* Módulos nuevos: asistencia, registro de clases, calendario y panel */
+.quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.quick-tile{border:1px solid #dce5f1;background:#f7f9fd;color:#344a68;border-radius:10px;padding:12px;text-align:left;font:inherit;font-weight:700;cursor:pointer}
+.quick-tile:hover{background:#edf3ff}
+.dashboard-lower{margin-top:14px}
+.good-item,.alert-item{padding:10px 12px;border-radius:9px;background:#f5f8fc;border:1px solid #e5ebf3;color:#42536d}
+.good-item{background:#effaf3;border-color:#d4efdc;color:#176b40}
+.event-mini{padding:10px 0;border-bottom:1px solid #e8edf3}
+.event-mini:last-child{border-bottom:0}
+.event-mini small{display:block;color:#748198;margin-top:4px}
+.event-mini p{margin:6px 0 0;color:#52627a}
+.track-controls{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:14px}
+.track-controls label,.event-form label,.lesson-form label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:750;color:#53647d}
+.track-controls input,.track-controls select,.event-form input,.event-form select,.event-form textarea,.lesson-form input,.lesson-form select,.lesson-form textarea,.activity-label input{width:100%;padding:10px;border:1px solid #d5deeb;border-radius:9px;background:white;color:#18263e;font:inherit}
+.track-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:14px 0}
+.track-summary>div{background:#f5f8fc;border:1px solid #e3eaf3;border-radius:10px;padding:10px}
+.track-summary small{display:block;color:#738197;font-size:11px}
+.track-summary b{display:block;font-size:21px;margin-top:4px;color:#253d60}
+.activity-label{display:flex;flex-direction:column;gap:6px;margin:10px 0 14px;font-weight:750;font-size:12px;color:#53647d}
+.track-table{min-width:800px}
+.track-table select,.track-table input{width:100%;min-width:130px;padding:9px;border:1px solid #d5deeb;border-radius:8px;background:white}
+.track-name{min-width:170px;color:#30445f}
+.track-footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.event-form,.lesson-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.event-wide,.lesson-wide{grid-column:1/-1}
+.event-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lesson-entry{border-top:1px solid #e7edf5;padding:14px 0}
+.lesson-entry-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#263d5d}
+.lesson-entry-head span{font-size:12px;color:#6d7d94}
+.lesson-entry p{color:#52627a;line-height:1.5;margin:8px 0}
+.section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){
+ .layout{grid-template-columns:1fr}
+ .side{padding:12px;position:relative}
+ .side .brand{margin:0 0 8px;font-size:20px}
+ .side>div[style*="PANEL ACADÉMICO"],.side>div[style*="ABRIR REGISTRO"],.side>p{display:none!important}
+ .nav{display:inline-flex;width:auto;white-space:nowrap;margin:2px;padding:9px 11px;font-size:12px}
+ .side{display:block}
+ .side .nav{max-width:100%}
+ .side{overflow-x:auto}
+ .side select{max-width:100%;margin-top:8px}
+ .main{padding:13px}
+ .track-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .track-controls,.event-form,.lesson-form{grid-template-columns:1fr}
+ .event-wide,.lesson-wide{grid-column:auto}
+ .quick-grid{grid-template-columns:1fr}
+ .event-row{align-items:flex-start}
+}
+@media print{
+ .side,.top,.btn,.tools{display:none!important}
+ .main{padding:0}
+ .panel{box-shadow:none;break-inside:avoid}
+ .tablewrap{overflow:visible}
+}
+
+
+/* Pantalla de bienvenida previa al panel general */
+.start-screen{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 80% 15%,#365b91 0,transparent 30%),linear-gradient(135deg,#0e2039,#1b3d66 58%,#294d78);color:#fff}
+.start-card{width:min(900px,100%);padding:clamp(24px,5vw,54px);border:1px solid #ffffff2b;border-radius:26px;background:linear-gradient(145deg,#ffffff18,#ffffff0b);box-shadow:0 24px 70px #07162b66;backdrop-filter:blur(8px)}
+.start-brand{font-size:clamp(32px,6vw,54px);font-weight:850;letter-spacing:-1.8px;margin:0}.start-brand span{color:#a9c4ff}.start-kicker{font-size:11px;font-weight:800;letter-spacing:2px;color:#bfd2f5;text-transform:uppercase;margin-bottom:14px}.start-card h2{font-size:clamp(22px,3.4vw,34px);margin:22px 0 10px}.start-card p{max-width:650px;color:#e0eaff;line-height:1.7;font-size:15px}.start-points{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0 28px}.start-points span{border:1px solid #ffffff35;background:#ffffff12;border-radius:30px;padding:8px 12px;font-size:12px;color:#e6eeff}.start-enter{background:#fff;color:#17365d;border:0;border-radius:11px;padding:13px 20px;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 8px 22px #07162b55}.start-enter:hover{transform:translateY(-1px)}.start-foot{font-size:11px!important;color:#bdcde6!important;margin-top:22px}
+@media(max-width:560px){.start-screen{padding:14px}.start-card{border-radius:19px}.start-enter{width:100%}}
+</style><style>:root{--user-accent:#4263eb}.btn:not(.gray):not(.redbtn),.start-enter{background:var(--user-accent)}.bulletin-sheet{background:#fff;border:1px solid #dce4ee;border-radius:14px;padding:22px;margin-top:16px;color:#18263e}.bulletin-head{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #e4eaf3;padding-bottom:14px;margin-bottom:18px}.bulletin-head h2{margin:6px 0}.bulletin-head p{margin:0;color:#718096}.bulletin-logo{border:2px solid var(--user-accent);color:var(--user-accent);font-weight:900;font-size:22px;border-radius:12px;padding:12px;min-width:54px;text-align:center}.event-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.event-form label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:700;color:#53647d}.event-form input{padding:10px;border:1px solid #cbd5e1;border-radius:8px}.event-wide{grid-column:1/-1}@media(max-width:560px){.event-form{grid-template-columns:1fr}.event-wide{grid-column:auto}.bulletin-sheet{padding:12px}.bulletin-head{gap:10px}}@media print{.bulletin-sheet{border:0;padding:0}.bulletin-head{break-inside:avoid}}</style><body><section class="start-screen" id="startScreen"><div class="start-card"><div class="start-kicker">Plataforma de gestión académica · Ciclo 2026–2027</div><h1 class="start-brand">Edu<span>Gestión</span></h1><h2>Bienvenido a tu espacio de gestión escolar</h2><p>Organizá cursos, materias, notas finales 1 y 2, orientadores A1 y A2, unidades, asistencia, trabajos, clases, convivencia, calendario, boletines, fichas e informes desde un solo panel.</p><div class="start-points"><span>✓ Seguimiento académico</span><span>✓ Informes automáticos</span><span>✓ Calendario escolar</span><span>✓ Guardado en este dispositivo</span></div><button class="start-enter" id="enterPanel">Entrar al panel general&nbsp; →</button><p class="start-foot">Acceso directo, sin registro. Los datos se guardan en este navegador y dispositivo; no se sincronizan automáticamente entre dispositivos.</p></div></section><div class="layout" id="mainLayout" style="display:none"><aside class="side"><div class="brand">Edu<span>Gestión</span></div><div style="font-size:10px;letter-spacing:1.5px;color:#9fb0c9;margin:0 7px 17px">PANEL ACADÉMICO</div><button class="nav active" data-v="home">⌂ Panel general</button><button class="nav" data-v="courses">▦ Cursos y materias</button><button class="nav" data-v="units">▤ Unidades y trabajos</button><button class="nav" data-v="tracking">✓ Asistencia y trabajos</button><button class="nav" data-v="classlog">▧ Registro de clases</button><button class="nav" data-v="convivencia">☷ Convivencia y seguimiento</button><button class="nav" data-v="calendar">▦ Calendario 2026–2027</button><button class="nav" data-v="feb">▣ Intensificación de febrero</button><button class="nav" data-v="reports">▤ Informes y reportes</button><button class="nav" data-v="bulletins">▣ Boletines individuales</button><button class="nav" data-v="profiles">♙ Fichas de alumnos</button><button class="nav" data-v="settings">⚙ Personalización</button><button class="nav" data-v="history">◷ Historial de cambios</button><button class="nav" data-v="backup">⇧ Copias de seguridad</button><div style="font-size:10px;color:#9fb0c9;margin:22px 5px 5px">ABRIR REGISTRO</div><select id="pick"></select><p style="font-size:11px;color:#aebbd0;margin-top:35px">Guardado automático activado</p></aside><main class="main"><div class="top"><div><small style="color:#718096">GESTIÓN ESCOLAR · SECUNDARIA</small><h1 id="title">Panel general</h1></div><div class="saved" id="save">● Guardado automático</div></div><div id="app"></div><div class="foot">EduGestión · Herramienta de organización y seguimiento académico. Los datos iniciales provienen de planillas recibidas y deben verificarse antes de cualquier uso oficial. Versión local: guarda datos en este navegador y dispositivo. No tiene sincronización en la nube ni acceso privado por contraseña. No cargues información personal identificable en un alojamiento público. Exportá copias de seguridad con frecuencia.</div></main></div>
+<script>
+const ORIGINAL={"1.º Ciencias Naturales": [{"nombre": "Lie H.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Luoc v.", "nota": "7,50", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Licg H.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Vac B.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Llinili H.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Llinili L.", "nota": "8,50", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Jar M.", "nota": "8", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Thiago E.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Jas C.", "nota": "8,75", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ana C.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Mia S.", "nota": "7,75", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Nil J.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Vor O.", "nota": "8,75", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Dec H.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Lin R.", "nota": "7,50", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Farcs R.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Cor S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Sal A.", "nota": "7,75", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Nirag L.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Sor Z.", "nota": "7,50", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Labac L.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}], "2.º Biología": [{"nombre": "Mateo G.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Sofia F.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Lucas R.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Valentina R.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Benjamin R.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Martina G.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Joaquin M.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Camila B.", "nota": "8", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Tomas R.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Emilia T.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Santino R.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Julieta A.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Thiago H.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Delfina C.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Agustina M.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ramiro N.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Franco O.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Miosela S.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Nicolas R.", "nota": "9⁵⁰", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "La planilla muestra 9⁵⁰; se conserva sin reinterpretar."}, {"nombre": "Antonella R.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Bruma A.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Guadalupe M.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Abrir I.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar posible error de lectura."}, {"nombre": "Kevin S.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Valentin R.", "nota": "7", "orientadora": "—", "situacion": "Aprobado (provisional)", "observaciones": "Orientadora 1 sin dato."}], "2.º Geografía": [{"nombre": "Mateo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Sofia F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lucas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentina R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Benjamin R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Martina G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Joaquin M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Camila B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Tomas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Emilia T.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Santino R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Julieta A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Thiago H.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Delfina C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Agustina M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro N.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Franco O.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Miosela S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Nicolas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Antonella R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Bruma A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Guadalupe M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Abrir I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Kevin S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentin R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}], "2.º Historia": [{"nombre": "Mateo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Sofia F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lucas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentina R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Benjamin R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Martina G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Joaquin M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Camila B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Tomas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Emilia T.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Santino R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Julieta A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Thiago H.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Delfina C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Agustina M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro N.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Franco O.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Miosela S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Nicolas R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Antonella R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Bruma A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Guadalupe M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Abrir I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Kevin S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentin R.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}], "3.º Biología": [{"nombre": "Bruno A.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Mía C.", "nota": "8.75", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Facundo B.", "nota": "7.50", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Alma V.", "nota": "7.50", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ignición S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Zoe P.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ramiro I.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Maleta C.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Valentina L.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Julieta F.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Bautista Q.", "nota": "7.96", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Víctor F.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Leonardo G.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Antonia P.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Simón B.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Paula C.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Alex D.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Milagros A.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Gonzalo C.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Josefina S.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Dylan B.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}], "3.º Geografía": [{"nombre": "Bruno A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Mía C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Facundo B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alma V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ignición S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Zoe P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Maleta C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentina L.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Julieta F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Bautista Q.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Víctor F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Leonardo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Antonia P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Simón B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Paula C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alex D.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Milagros A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Gonzalo C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Josefina S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Dylan B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}], "3.º Historia": [{"nombre": "Bruno A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Mía C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Facundo B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alma V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ignición S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Zoe P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Maleta C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Valentina L.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Julieta F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Bautista Q.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Víctor F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Leonardo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Antonia P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Simón B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Paula C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alex D.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Milagros A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Gonzalo C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Josefina S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Dylan B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}], "4.º Biología": [{"nombre": "Alexel N.", "nota": "950", "orientadora": "TEA", "situacion": "Revisar dato", "observaciones": "La planilla muestra 950; no se interpreta como 9,50 sin confirmación."}, {"nombre": "Kiara S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ezequiel B.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Zoe M.", "nota": "4", "orientadora": "TEP", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Alan E.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Guadalupe P.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Rodrigo C.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Jazmín V.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Nahuel C.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Aitana T.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Kevin P.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Antonela L.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Matias B.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Florencia A.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Leonel V.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Rorio B.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Samuel L.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Brezida F.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Elias C.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Maia S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}], "4.º Historia": [{"nombre": "Alexel N.", "nota": "950", "orientadora": "TEA", "situacion": "Revisar dato", "observaciones": "La planilla muestra 950; no se interpreta como 9,50 sin confirmación."}, {"nombre": "Kiara S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ezequiel B.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Zoe M.", "nota": "4", "orientadora": "TEP", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Alan E.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Guadalupe P.", "nota": "5", "orientadora": "TEP", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Rodrigo C.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Jazmín V.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Nahuel C.", "nota": "5", "orientadora": "TEP", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Aitana T.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Kevin P.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Antonela L.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Matias B.", "nota": "1", "orientadora": "TED", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Florencia A.", "nota": "3", "orientadora": "TED", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Leonel V.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Rorio B.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Samuel L.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Brezida F.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Elias C.", "nota": "1", "orientadora": "TED", "situacion": "Desaprobado (provisional)", "observaciones": ""}, {"nombre": "Maia S.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}], "5.º Biología": [{"nombre": "Agustín B.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Milagros P.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Lautaro A.", "nota": "8,33", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Abrí S.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Máximo I.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Morena Z.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Simón A.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Biancanca P.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Franco V.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Alma C.", "nota": "8,50", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ian F.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Josefina N.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Gael M.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Melena P.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Ramiro V.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Dilan C.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Salvador G.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Lola O.", "nota": "7", "orientadora": "TEP", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Facundo G.", "nota": "5", "orientadora": "TEA", "situacion": "Intensificación / adeuda", "observaciones": "Adeuda Biodiversidad U1 según observación original."}, {"nombre": "Delfina B.", "nota": "9", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Vicente A.", "nota": "7", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Candela L.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Tomas V.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Brisa C.", "nota": "8", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Ulises F.", "nota": "7", "orientadora": "TED", "situacion": "Aprobado (provisional)", "observaciones": ""}, {"nombre": "Vaula A.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}, {"nombre": "Enzo u.", "nota": "10", "orientadora": "TEA", "situacion": "Aprobado (provisional)", "observaciones": "Nombre transcripto tal como figura; verificar."}], "5.º Historia": [{"nombre": "Agustín B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Milagros P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lautaro A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Abrí S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Máximo I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Morena Z.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Simón A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Biancanca P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Franco V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alma C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ian F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Josefina N.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Gael M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Melena P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Dilan C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Salvador G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lola O.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Facundo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Delfina B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Vicente A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Candela L.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Tomas V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Brisa C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ulises F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Vaula A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Enzo u.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}], "5.º Geografía": [{"nombre": "Agustín B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Milagros P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lautaro A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Abrí S.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Máximo I.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Morena Z.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Simón A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Biancanca P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Franco V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Alma C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ian F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Josefina N.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Gael M.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Melena P.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ramiro V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Dilan C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Salvador G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Lola O.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Facundo G.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Delfina B.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Vicente A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Candela L.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Tomas V.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Brisa C.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Ulises F.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Vaula A.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}, {"nombre": "Enzo u.", "nota": "", "orientadora": "", "situacion": "Sin calificar", "observaciones": ""}]};const KEY="edugestion_automatico_v3";let D;try{D=JSON.parse(localStorage.getItem(KEY))||structuredClone(ORIGINAL)}catch(e){D=structuredClone(ORIGINAL)}let chosen=Object.keys(D)[0];
+const HISTKEY="edugestion_historial_v1";let HIST=[];try{HIST=JSON.parse(localStorage.getItem(HISTKEY))||[]}catch(e){HIST=[]}
+const UNIT_COUNTS={"1.º Ciencias Naturales":8,"2.º Biología":7,"2.º Geografía":6,"2.º Historia":5,"3.º Biología":6,"3.º Geografía":6,"3.º Historia":5,"4.º Biología":8,"4.º Historia":7,"5.º Biología":7,"5.º Historia":8,"5.º Geografía":8};
+const UNITKEY="edugestion_unidades_v1";let U={};
+try{U=JSON.parse(localStorage.getItem(UNITKEY))||{}}catch(e){U={}}
+function ensureUnits(){Object.entries(UNIT_COUNTS).forEach(([subject,count])=>{if(!U[subject])U[subject]=Array.from({length:count},(_,i)=>({titulo:`Unidad ${i+1}`,alumnos:(D[subject]||[]).map(r=>({nombre:r.nombre,nota:"",observaciones:""}))}));});}
+ensureUnits();
+function saveUnits(){try{localStorage.setItem(UNITKEY,JSON.stringify(U))}catch(e){alert('No se pudieron guardar las unidades. Exportá una copia de seguridad.')}}
+
+function logChange(courseName,student,field,value){HIST.unshift({fecha:new Date().toLocaleString("es-AR"),materia:courseName,alumno:student,campo:field,valor:String(value??"")});HIST=HIST.slice(0,500);try{localStorage.setItem(HISTKEY,JSON.stringify(HIST))}catch(e){}}
+function statusFor(r){return r.estadoManual||estadoAutomatico(r)}
+function stateClass(s){return s==="Aprobado"?"st-ok":s==="Desaprobado"?"st-bad":s==="Intensificación / adeuda"||s==="Pendiente"?"st-pend":s==="Revisar dato"?"st-rev":"st-none"}
+
+const opts=["Aprobado","Desaprobado","Intensificación / adeuda","Pendiente","Sin calificar","Revisar dato"];
+const SETTINGSKEY="edugestion_settings_v1";
+let SETTINGS={escuela:"EduGestión",ciclo:"2026–2027",logo:"EG",acento:"#4263eb"};
+try{SETTINGS={...SETTINGS,...JSON.parse(localStorage.getItem(SETTINGSKEY)||"{}")}}catch(e){}
+function saveSettings(){try{localStorage.setItem(SETTINGSKEY,JSON.stringify(SETTINGS))}catch(e){}applySettings()}
+function applySettings(){document.documentElement.style.setProperty("--user-accent",SETTINGS.acento||"#4263eb");document.querySelectorAll(".brand").forEach(el=>{el.innerHTML=`${esc(SETTINGS.escuela||"EduGestión")}<span></span>`});document.querySelectorAll(".start-brand").forEach(el=>{el.innerHTML=`${esc(SETTINGS.escuela||"EduGestión")}<span></span>`});document.querySelectorAll(".start-kicker").forEach(el=>el.textContent=`Plataforma de gestión académica · Ciclo ${SETTINGS.ciclo||"2026–2027"}`);}
+const orientadoras=["","TEA","TEP","TED"];
+const mensajes={
+  "7-8.49":["Muy bien, lo lograste. Puedes seguir esforzándote.","Buen trabajo, sigue avanzando."],
+  "8.5-9.49":["¡Excelente trabajo! Sigue así.","Muy buen desempeño, continúa esforzándote."],
+  "9.5-10":["¡Felicitaciones, excelente logro!","¡Sobresaliente! Sigue así."]
+};
+function tramo(n){if(n>=7 && n<8.5)return "7-8.49";if(n>=8.5 && n<9.5)return "8.5-9.49";if(n>=9.5 && n<=10)return "9.5-10";return ""}
+function numero(v){const s=String(v??"").trim();if(!s)return NaN;return Number(s.replace(",", "."))}
+function notaDeReferencia(r){const n2=String(r.nota2??"").trim();return n2?n2:r.nota}
+function estadoAutomatico(r){
+  const valor=notaDeReferencia(r);
+  if(!String(valor??"").trim()) return r.situacion==="Pendiente"?"Pendiente":"Sin calificar";
+  const n=numero(valor);
+  if(!Number.isFinite(n)||n<0||n>10) return "Revisar dato";
+  if(n>=6.5) return "Aprobado";
+  if(n<=6) return "Desaprobado";
+  return "Revisar dato";
+}
+function save(){const el=document.getElementById("save");try{localStorage.setItem(KEY,JSON.stringify(D));if(el){el.textContent="● Guardado en este dispositivo";el.classList.remove("is-error","is-saving")};return true}catch(e){if(el){el.textContent="! No se pudo guardar: exportá una copia";el.classList.add("is-error")};return false}}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function cls(s){return s==="Aprobado"?"ok":s==="Desaprobado"?"bad":s==="Intensificación / adeuda"||s==="Pendiente"?"pend":s==="Revisar dato"?"rev":"none"}
+function badge(s){return `<span class="badge ${cls(s)}">${esc(s)}</span>`}
+function nav(){document.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>show(b.dataset.v));let p=document.getElementById("pick");p.innerHTML=Object.keys(D).map(k=>`<option>${esc(k)}</option>`).join("");p.value=chosen;p.onchange=()=>show("course",p.value)}
+function show(v,c){
+ if(c)chosen=c;
+ const titles={home:"Panel general",courses:"Cursos y materias",units:"Unidades y trabajos",tracking:"Asistencia y trabajos",classlog:"Registro de clases",convivencia:"Convivencia y seguimiento",calendar:"Calendario académico 2026–2027",feb:"Intensificación de febrero",reports:"Informes y reportes",bulletins:"Boletines individuales",profiles:"Fichas integrales de alumnos",settings:"Personalización",history:"Historial de cambios",backup:"Copias de seguridad"};
+ document.getElementById("title").textContent=titles[v]||chosen;
+ document.querySelectorAll("[data-v]").forEach(b=>b.classList.toggle("active",b.dataset.v===v));
+ nav();
+ ({home,courses,course,units,tracking,classlog,convivencia,calendar,feb,reports,bulletins,profiles,settings,history,backup}[v]||home)();
+}
+function home(){
+ const entries=Object.entries(D).flatMap(([materia,alumnos])=>alumnos.map(r=>({materia,r,estado:statusFor(r)})));
+ const total=entries.length,ok=entries.filter(x=>x.estado==="Aprobado").length,bad=entries.filter(x=>x.estado==="Desaprobado").length;
+ const pending=entries.filter(x=>["Pendiente","Intensificación / adeuda"].includes(x.estado)).length;
+ const ungraded=entries.filter(x=>x.estado==="Sin calificar").length;
+ const grades=entries.flatMap(x=>[numero(x.r.nota),numero(x.r.nota2)]).filter(n=>Number.isFinite(n)&&n>=0&&n<=10);
+ const average=grades.length?(grades.reduce((a,b)=>a+b,0)/grades.length).toFixed(2).replace(".",","):"—";
+ const totalStudents=new Set(entries.map(x=>x.r.nombre)).size;
+ let subjectBars=Object.entries(D).map(([k,v])=>{
+  const approved=v.filter(x=>statusFor(x)==="Aprobado").length;
+  const pct=v.length?Math.round(approved/v.length*100):0;
+  return `<div class="barrow"><span>${esc(k)}</span><div class="bar"><div class="fill" style="width:${pct}%"></div></div><b>${approved}/${v.length}</b></div>`;
+ }).join("");
+ const trackingSubjects=Object.keys(TRACK);
+ let attendanceCount=0,workPending=0;
+ Object.values(TRACK).forEach(days=>Object.values(days||{}).forEach(day=>Object.values(day.rows||{}).forEach(row=>{
+  if(row.asistencia)attendanceCount++;
+  if(row.trabajo==="Pendiente")workPending++;
+ })));
+ const nextEvents=CUSTOM_EVENTS.filter(e=>e.fecha>=todayISO()).sort((a,b)=>a.fecha.localeCompare(b.fecha)).slice(0,4);
+ document.getElementById("app").innerHTML=`
+ <section class="intro-hero"><div class="intro-copy"><div class="intro-kicker">Plataforma de gestión académica · Ciclo 2026–2027</div><h2>Bienvenido a EduGestión</h2><p>Organizá cursos, materias, calificaciones, unidades, asistencia, actividades, clases y seguimiento escolar desde un solo lugar.</p><div class="quick-actions"><button class="btn" id="introCourses">Explorar cursos</button><button class="btn secondary" id="introUnits">Ver unidades</button><button class="btn secondary" id="introCalendar">Consultar calendario</button></div></div><div class="intro-side"><div class="intro-mark">▤</div><small>Organización · Seguimiento · Informes</small></div></section>
+ <div class="notice"><b>Importante:</b> aprobado desde 6,50; de 0 a 6,00 es desaprobado y de 6,01 a 6,49 queda para revisar. Las notas vacías permanecen como “Sin calificar”. La asistencia y los trabajos solo se cuentan cuando se registran; no se inventan datos que no fueron cargados.</div>
+ <div class="cards">
+  <div class="card"><small>Alumnos registrados</small><div class="num">${totalStudents}</div></div>
+  <div class="card"><small>Registros alumno-materia</small><div class="num">${total}</div></div>
+  <div class="card"><small>Promedio de notas finales</small><div class="num">${average}</div><div class="metric-note">${grades.length} calificaciones cargadas</div></div>
+  <div class="card"><small>Aprobados</small><div class="num green">${ok}</div><div class="metric-note">${total?Math.round(ok/total*100):0}% de los registros</div></div>
+  <div class="card"><small>Desaprobados</small><div class="num red">${bad}</div></div>
+  <div class="card"><small>Intensificación / pendientes</small><div class="num yellow">${pending}</div></div>
+  <div class="card"><small>Sin calificar</small><div class="num blue">${ungraded}</div></div>
+  <div class="card"><small>Registros de asistencia</small><div class="num">${attendanceCount}</div><div class="metric-note">${workPending} trabajos pendientes registrados</div></div>
+ </div>
+ <div class="grid">
+  <section class="panel"><h3>Situación por curso y materia</h3>${subjectBars}</section>
+  <section class="panel"><h3>Resumen académico</h3><p class="green">🟢 Aprobados: ${ok}</p><p class="red">🔴 Desaprobados: ${bad}</p><p class="yellow">🟡 Intensificación / pendientes: ${pending}</p><p class="blue">🔵 Sin calificar: ${ungraded}</p><p>🟣 Revisar dato: ${entries.filter(x=>x.estado==="Revisar dato").length}</p><hr><h3>Accesos rápidos</h3><div class="quick-grid"><button class="quick-tile" id="goTracking">✓ Asistencia y trabajos</button><button class="quick-tile" id="goClasslog">▧ Registro de clases</button><button class="quick-tile" id="goReports">▤ Informes</button><button class="quick-tile" id="goBackup">⇧ Copias de seguridad</button></div></section>
+ </div>
+ <div class="grid dashboard-lower">
+  <section class="panel"><h3>Alertas para revisar</h3>${bad?`<p class="alert-item">🔴 ${bad} registro(s) con nota menor a 6: revisar los contenidos adeudados.</p>`:"<p class='good-item'>No hay registros desaprobados según las notas cargadas.</p>"}${pending?`<p class="alert-item">🟡 ${pending} registro(s) necesitan seguimiento o intensificación.</p>`:""}${ungraded?`<p class="alert-item">🔵 ${ungraded} registro(s) todavía no tienen nota final.</p>`:""}${workPending?`<p class="alert-item">📚 ${workPending} trabajo(s) figuran pendientes.</p>`:""}${!bad&&!pending&&!ungraded&&!workPending?'<p class="good-item">No hay alertas académicas calculadas con los datos disponibles.</p>':""}</section>
+  <section class="panel"><h3>Próximos eventos agregados</h3>${nextEvents.length?nextEvents.map(e=>`<div class="event-mini"><b>${localDateLabel(e.fecha)} · ${esc(e.titulo)}</b><small>${esc(e.tipo||"Evento")} · ${esc(e.materia||"General")}</small></div>`).join(""):'<p class="muted">Todavía no agregaste eventos personalizados. Podés hacerlo desde el calendario.</p>'}<button class="btn gray" id="seeCalendar">Abrir calendario</button></section>
+ </div>
+ <section class="panel" style="margin-top:14px"><h3>Acceso a materias</h3><div class="courses">${Object.entries(D).map(([k,v])=>`<button class="course" data-open="${esc(k)}"><b>${esc(k)}</b><small>${v.length} alumnos · ${v.filter(x=>statusFor(x)==="Aprobado").length} aprobados</small></button>`).join("")}</div></section>`;
+ document.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>show("course",b.dataset.open));
+ document.getElementById("introCourses").onclick=()=>show("courses");
+ document.getElementById("introUnits").onclick=()=>show("units");
+ document.getElementById("introCalendar").onclick=()=>show("calendar");
+ document.getElementById("goTracking").onclick=()=>show("tracking");
+ document.getElementById("goClasslog").onclick=()=>show("classlog");
+ document.getElementById("goReports").onclick=()=>show("reports");
+ document.getElementById("goBackup").onclick=()=>show("backup");
+ document.getElementById("seeCalendar").onclick=()=>show("calendar");
+}
+function courses(){document.getElementById("app").innerHTML=`<section class="panel"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3>Cursos y materias</h3><button class="btn" id="newCourse">＋ Crear curso/materia</button></div><div class="courses">${Object.entries(D).map(([k,v])=>`<button class="course" data-open="${esc(k)}"><b>${esc(k)}</b><small>${v.length} alumnos</small></button>`).join("")}</div></section>`;document.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>show("course",b.dataset.open));document.getElementById("newCourse").onclick=()=>{let k=prompt("Nombre del curso y materia:");if(k&&k.trim()&&!D[k.trim()]){D[k.trim()]=[];chosen=k.trim();save();show("course",chosen)}}}
+function course(){
+let a=D[chosen];
+// Compatibilidad con registros creados en versiones anteriores.
+a.forEach(r=>{if(!('nota2' in r))r.nota2='';if(!('orientadora2' in r))r.orientadora2='';if(!('observaciones' in r))r.observaciones='';if(!('adeuda' in r))r.adeuda='';if(!('mensaje' in r))r.mensaje='';});
+save();
+document.getElementById("app").innerHTML=`<div class="notice"><b>Lista horizontal editable:</b> cada alumno ocupa una fila y sus notas, orientadoras y observaciones aparecen en columnas. Tocá cualquier campo para escribir. Los cambios se guardan automáticamente en este dispositivo. Aprobación: de 6,50 a 10.</div><section class="panel"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h3>${esc(chosen)}</h3><small>${a.length} alumnos</small></div><div class="tools"><button class="btn" id="add">＋ Agregar alumno</button><button class="btn gray" id="printCourse">Imprimir</button><button class="btn gray" id="csvCourse">Exportar planilla</button><button class="btn gray" id="rename">Renombrar</button><button class="btn redbtn" id="removeCourse">Eliminar materia</button></div></div><div class="tools"><input id="q" placeholder="Buscar alumno..." autocomplete="off"><select id="filter"><option value="">Todas las situaciones</option>${opts.map(x=>`<option>${x}</option>`).join("")}</select></div><div id="studentList"></div></section>`;
+function render(){
+ const q=document.getElementById("q").value.toLowerCase(),f=document.getElementById("filter").value;
+ document.getElementById("studentList").innerHTML=`<p class="scroll-hint">Deslizá la tabla hacia los costados para ver y editar todos los datos de cada alumno.</p><div class="grade-table-wrap"><table class="grade-table"><thead><tr><th>N.º</th><th>Alumno/a</th><th>Nota final 1</th><th>Nota final 2</th><th>Orientadora 1</th><th>Orientadora 2</th><th>Mensaje para el boletín</th><th>Observaciones</th><th>Contenidos que adeuda</th><th>Estado</th><th>Acciones</th></tr></thead><tbody>`+a.map((r,i)=>({r,i})).filter(x=>x.r.nombre.toLowerCase().includes(q)&&(!f||statusFor(x.r)===f)).map(({r,i})=>{
+  const n=numero(notaDeReferencia(r)), choices=mensajes[tramo(n)]||[];
+  const msgOpts=choices.map((m,j)=>`<option value="${esc(m)}" ${r.mensaje===m?"selected":""}>${esc(m)}</option>`).join("");
+  const st=statusFor(r);
+  return `<tr data-card="${i}"><td>${i+1}</td>
+  <td class="name-cell"><input data-i="${i}" data-k="nombre" value="${esc(r.nombre)}" autocomplete="off" aria-label="Nombre del alumno"></td>
+  <td><input data-i="${i}" data-k="nota" value="${esc(r.nota)}" placeholder="Ej.: 8,50" inputmode="decimal" aria-label="Nota final 1"></td>
+  <td><input data-i="${i}" data-k="nota2" value="${esc(r.nota2)}" placeholder="Ej.: 9" inputmode="decimal" aria-label="Nota final 2"></td>
+  <td><select data-i="${i}" data-k="orientadora" aria-label="Orientadora 1">${orientadoras.map(x=>`<option value="${x}" ${r.orientadora===x?"selected":""}>${x||"Seleccionar"}</option>`).join("")}</select></td>
+  <td><select data-i="${i}" data-k="orientadora2" aria-label="Orientadora 2">${orientadoras.map(x=>`<option value="${x}" ${r.orientadora2===x?"selected":""}>${x||"Seleccionar"}</option>`).join("")}</select></td>
+  <td class="msg-cell"><select data-i="${i}" data-k="mensaje" aria-label="Mensaje para el boletín"><option value="">${choices.length?"Seleccionar mensaje":"Ingresá una nota de 7 o más"}</option>${msgOpts}</select><small style="display:block;color:#718096;font-size:10px;margin:4px 2px">${n>=9.5?"Rango: 9,50 a 10":n>=8.5?"Rango: 8,50 a 9,49":n>=7?"Rango: 7 a 8,49":"Mensaje disponible desde 7"}</small></td>
+  <td class="obs-cell"><textarea data-i="${i}" data-k="observaciones" placeholder="Escribir observaciones" aria-label="Observaciones">${esc(r.observaciones)}</textarea></td>
+  <td class="owe-cell"><textarea data-i="${i}" data-k="adeuda" placeholder="Contenidos pendientes" aria-label="Contenidos que adeuda">${esc(r.adeuda)}</textarea></td>
+  <td class="status-cell" id="status-${i}"><select class="status-select ${stateClass(st)}" data-i="${i}" data-k="estadoManual" aria-label="Estado académico">${["","Aprobado","Desaprobado","Intensificación / adeuda","Pendiente","Sin calificar","Revisar dato"].map(x=>`<option value="${esc(x)}" ${String(r.estadoManual||"")===x?"selected":""}>${x||"Automático según nota"}</option>`).join("")}</select><small style="display:block;color:#718096;margin-top:4px">${badge(st)}</small></td>
+  <td class="action-cell"><button class="btn redbtn" data-del="${i}">Quitar</button></td></tr>`;
+ }).join("")+`</tbody></table></div>`||`<p class="muted">No hay alumnos que coincidan con la búsqueda.</p>`;
+ bindFields();
+}
+function updateStatus(i){const r=a[i],st=statusFor(r),el=document.getElementById(`status-${i}`);r.situacion=st;if(el){const sel=el.querySelector("select");if(sel)sel.className="status-select "+stateClass(st);const b=el.querySelector(".badge");if(b)b.outerHTML=badge(st);}}
+function bindFields(){
+ document.querySelectorAll("[data-k]").forEach(el=>{
+  const update=()=>{
+   const i=Number(el.dataset.i),k=el.dataset.k,r=a[i];
+   const old=r[k];r[k]=el.value;
+   if(old!==el.value)logChange(chosen,r.nombre,k,el.value);
+   if(k==="nombre"&&old!==el.value){(U[chosen]||[]).forEach(unit=>{const st=unit.alumnos?.find(x=>x.nombre===old);if(st)st.nombre=el.value});saveUnits()}
+   if(k==="estadoManual"){updateStatus(i);el.className="status-select "+stateClass(statusFor(r));}
+   if(k==="nota"||k==="nota2"){
+    if(k==="nota"||k==="nota2"){
+      r.estadoManual="";
+      const stateSel=el.closest("tr")?.querySelector('[data-k="estadoManual"]');
+      if(stateSel){stateSel.value="";stateSel.className="status-select "+stateClass(estadoAutomatico(r));}
+      updateStatus(i);
+    }
+    const row=el.closest("tr"), sel=row?.querySelector('[data-k="mensaje"]'), hint=row?.querySelector(".msg-cell small");
+    const n=numero(notaDeReferencia(r)), choices=mensajes[tramo(n)]||[];
+    if(sel){
+      const previous=r.mensaje;
+      sel.innerHTML=`<option value="">${choices.length?"Seleccionar mensaje":"Ingresá una nota de 7 o más"}</option>`+choices.map(m=>`<option value="${esc(m)}">${esc(m)}</option>`).join("");
+      if(choices.includes(previous)) sel.value=previous;
+      else {r.mensaje="";sel.value="";}
+    }
+    if(hint)hint.textContent=n>=9.5?"Rango: 9,50 a 10":n>=8.5?"Rango: 8,50 a 9,49":n>=7?"Rango: 7 a 8,49":"Mensaje disponible desde 7";
+   }
+   save();
+  };
+  el.addEventListener("input",update);el.addEventListener("change",update);
+ });
+ document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{if(confirm("¿Quitar este alumno?")){const gone=a[Number(b.dataset.del)];logChange(chosen,gone?.nombre||"","Alumno eliminado","");a.splice(Number(b.dataset.del),1);(U[chosen]||[]).forEach(unit=>{unit.alumnos=(unit.alumnos||[]).filter(st=>st.nombre!==gone?.nombre)});saveUnits();save();render();}});
+}
+document.getElementById("q").oninput=render;document.getElementById("filter").onchange=render;
+document.getElementById("printCourse").onclick=()=>window.print();
+document.getElementById("csvCourse").onclick=()=>{const cols=["Alumno","Nota final 1","Nota final 2","Orientadora 1","Orientadora 2","Mensaje","Observaciones","Adeuda","Estado"];const lines=[cols,...a.map(r=>[r.nombre,r.nota,r.nota2,r.orientadora,r.orientadora2,r.mensaje,r.observaciones,r.adeuda,statusFor(r)])].map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";"));const blob=new Blob(["\ufeff"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"});const u=URL.createObjectURL(blob),link=document.createElement("a");link.href=u;link.download=chosen.replace(/[^a-z0-9]+/gi,"_")+"_EduGestion.csv";link.click();URL.revokeObjectURL(u);};
+document.getElementById("add").onclick=()=>{let n=prompt("Nombre del alumno:");if(n&&n.trim()){a.push({nombre:n.trim(),nota:"",nota2:"",orientadora:"",orientadora2:"",situacion:"Sin calificar",mensaje:"",observaciones:"",adeuda:""});(U[chosen]||[]).forEach(u=>u.alumnos.push({nombre:n.trim(),nota:"",observaciones:""}));saveUnits();logChange(chosen,n.trim(),"Alumno agregado","");save();render();}};
+document.getElementById("rename").onclick=()=>{let n=prompt("Nuevo nombre:",chosen);if(n&&n.trim()&&n!==chosen){D[n]=D[chosen];delete D[chosen];if(U[chosen]){U[n]=U[chosen];delete U[chosen];saveUnits()}if(typeof CONV!=="undefined"){["temas","comportamientos","sanciones"].forEach(g=>{if(CONV[g]&&CONV[g][chosen]){CONV[g][n]=CONV[g][chosen];delete CONV[g][chosen]}});saveConv()}chosen=n;save();show("course",n);}};
+document.getElementById("removeCourse").onclick=()=>{if(confirm("¿Eliminar esta materia?")){delete D[chosen];delete U[chosen];if(typeof CONV!=="undefined"){["temas","comportamientos","sanciones"].forEach(g=>{if(CONV[g])delete CONV[g][chosen]});saveConv()}saveUnits();chosen=Object.keys(D)[0];save();show("courses");}};
+render();
+}
+
+function units(){
+ ensureUnits();
+ const subjects=Object.keys(UNIT_COUNTS);
+ let subject=chosen&&U[chosen]?chosen:subjects[0];
+ document.getElementById("app").innerHTML=`
+ <div class="notice"><b>Planilla horizontal de unidades:</b> cada alumno aparece en una fila y cada unidad en una columna. La cantidad inicial de unidades corresponde a cada materia. Podés editar títulos, temas, fechas, notas y observaciones. Los registros de unidades son independientes de las notas finales.</div>
+ <section class="panel">
+  <div class="tools unit-toolbar">
+   <label style="font-weight:700;color:#52627a;align-self:center">Curso y materia</label>
+   <select id="unitSubject">${subjects.map(k=>`<option value="${esc(k)}" ${k===subject?'selected':''}>${esc(k)}</option>`).join('')}</select>
+   <input id="unitSearch" placeholder="Buscar alumno..." aria-label="Buscar alumno">
+   <button class="btn gray" id="unitExport">Exportar planilla</button>
+   <button class="btn gray" id="unitPrint">Imprimir</button>
+  </div>
+  <div id="unitContent"></div>
+ </section>`;
+ const select=document.getElementById('unitSubject');
+ function syncRoster(){
+  const students=D[subject]||[];
+  (U[subject]||[]).forEach(unit=>{
+   if(!Array.isArray(unit.alumnos))unit.alumnos=[];
+   students.forEach(r=>{
+    if(!unit.alumnos.some(st=>st.nombre===r.nombre))unit.alumnos.push({nombre:r.nombre,nota:"",observaciones:""});
+   });
+   unit.alumnos=unit.alumnos.filter(st=>students.some(r=>r.nombre===st.nombre));
+   if(!("contenido" in unit))unit.contenido="";
+   if(!("fecha" in unit))unit.fecha="";
+   if(!("trabajo" in unit))unit.trabajo="";
+  });
+  saveUnits();
+ }
+ function renderUnits(){
+  subject=select.value;
+  if(!Array.isArray(U[subject]))U[subject]=[];
+  syncRoster();
+  let unitsList=U[subject]||[];
+  const students=D[subject]||[];
+  const search=(document.getElementById('unitSearch').value||"").trim().toLocaleLowerCase("es");
+  const shown=students.filter(st=>st.nombre.toLocaleLowerCase("es").includes(search));
+  const allGrades=unitsList.flatMap(u=>(u.alumnos||[]).map(st=>numero(st.nota)).filter(n=>Number.isFinite(n)&&n>=0&&n<=10));
+  const avg=allGrades.length?(allGrades.reduce((a,b)=>a+b,0)/allGrades.length).toFixed(2).replace(".",","):"—";
+  const loaded=allGrades.length;
+  document.getElementById('unitContent').innerHTML=`
+   <div class="section-heading unit-heading">
+    <div><h2>${esc(subject)}</h2><p>${unitsList.length} unidades · ${students.length} alumnos · ${loaded} notas cargadas</p></div>
+    <div class="unit-actions"><button class="btn" id="addUnit">＋ Agregar unidad</button></div>
+   </div>
+   <div class="unit-summary">
+    <div><small>Unidades de la materia</small><b>${unitsList.length}</b></div>
+    <div><small>Alumnos en la planilla</small><b>${students.length}</b></div>
+    <div><small>Notas de unidades cargadas</small><b>${loaded}</b></div>
+    <div><small>Promedio de notas cargadas</small><b>${avg}</b></div>
+   </div>
+   <p class="scroll-hint">↔ Deslizá la tabla hacia los costados para ver todas las unidades. En computadora también podés usar la barra inferior.</p>
+   <div class="unit-table-wrap">
+    <table class="unit-table">
+     <thead><tr>
+      <th class="unit-sticky-col unit-student-head">Alumno</th>
+      ${unitsList.map((u,ui)=>`<th class="unit-col-head">
+       <div class="unit-head-tools">
+        <input class="unit-title-input" data-unit-title="${ui}" value="${esc(u.titulo||`Unidad ${ui+1}`)}" aria-label="Nombre de la unidad ${ui+1}">
+        <button class="unit-delete" data-unit-delete="${ui}" title="Eliminar unidad" aria-label="Eliminar unidad ${ui+1}">×</button>
+       </div>
+       <input class="unit-meta-input" data-unit-meta="contenido:${ui}" value="${esc(u.contenido||"")}" placeholder="Tema / contenido">
+       <input class="unit-meta-input" data-unit-meta="fecha:${ui}" type="date" value="${esc(u.fecha||"")}" aria-label="Fecha de unidad ${ui+1}">
+       <input class="unit-meta-input" data-unit-meta="trabajo:${ui}" value="${esc(u.trabajo||"")}" placeholder="Trabajo / actividad">
+      </th>`).join("")}
+      <th class="unit-average-head">Promedio</th>
+      <th class="unit-status-head">Estado</th>
+     </tr></thead>
+     <tbody>
+      ${shown.map(st=>{
+       const cells=unitsList.map((u,ui)=>{
+        const si=(u.alumnos||[]).findIndex(x=>x.nombre===st.nombre);
+        const item=si>=0?u.alumnos[si]:{nota:"",observaciones:""};
+        return `<td class="unit-cell">
+         <label class="unit-cell-label">Nota</label>
+         <input class="unit-grade-input" data-unit-grade="${ui}:${si}" value="${esc(item.nota||"")}" placeholder="—" inputmode="decimal" aria-label="${esc(st.nombre)} · ${esc(u.titulo||`Unidad ${ui+1}`)} · nota">
+         <label class="unit-cell-label">Observación</label>
+         <input class="unit-obs-input" data-unit-obs="${ui}:${si}" value="${esc(item.observaciones||"")}" placeholder="Agregar observación" aria-label="${esc(st.nombre)} · observación ${ui+1}">
+        </td>`;
+       }).join("");
+       const vals=unitsList.map(u=>{const x=(u.alumnos||[]).find(x=>x.nombre===st.nombre);return x?numero(x.nota):NaN}).filter(n=>Number.isFinite(n)&&n>=0&&n<=10);
+       const mean=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:null;
+       const status=mean===null?"Sin calificar":mean>=6?"Aprobado":"Reforzar";
+       return `<tr><th class="unit-sticky-col unit-student-name">${esc(st.nombre)}</th>${cells}<td class="unit-average">${mean===null?"—":mean.toFixed(2).replace(".",",")}</td><td><span class="unit-pill ${mean===null?"none":mean>=6?"ok":"review"}">${status}</span></td></tr>`;
+      }).join("")}
+      ${shown.length?"":`<tr><td colspan="${unitsList.length+3}" class="unit-empty">No se encontraron alumnos con esa búsqueda.</td></tr>`}
+     </tbody>
+    </table>
+   </div>
+   <div class="unit-footer-note">Las notas de cada unidad no reemplazan las notas finales. El promedio y el estado de esta tabla son orientativos y se calculan solo con las notas de unidad que estén cargadas.</div>`;
+  document.querySelectorAll('[data-unit-title]').forEach(el=>el.onchange=()=>{
+   unitsList[Number(el.dataset.unitTitle)].titulo=el.value.trim()||`Unidad ${Number(el.dataset.unitTitle)+1}`;saveUnits();renderUnits();
+  });
+  document.querySelectorAll('[data-unit-meta]').forEach(el=>el.onchange=()=>{
+   const [field,index]=el.dataset.unitMeta.split(':');unitsList[Number(index)][field]=el.value;saveUnits();
+  });
+  document.querySelectorAll('[data-unit-grade]').forEach(el=>{
+   const [ui,si]=el.dataset.unitGrade.split(':').map(Number);
+   if(si<0)return;
+   el.oninput=()=>{unitsList[ui].alumnos[si].nota=el.value;saveUnits();updateUnitSummary()};
+   el.onchange=()=>{unitsList[ui].alumnos[si].nota=el.value;saveUnits();renderUnits()};
+  });
+  document.querySelectorAll('[data-unit-obs]').forEach(el=>{
+   const [ui,si]=el.dataset.unitObs.split(':').map(Number);
+   if(si<0)return;
+   el.onchange=()=>{unitsList[ui].alumnos[si].observaciones=el.value;saveUnits()};
+  });
+  document.querySelectorAll('[data-unit-delete]').forEach(el=>el.onclick=()=>{
+   const ui=Number(el.dataset.unitDelete);
+   if(confirm(`¿Eliminar ${unitsList[ui].titulo||`Unidad ${ui+1}`} y sus notas?`)){unitsList.splice(ui,1);saveUnits();renderUnits()}
+  });
+  document.getElementById('addUnit').onclick=()=>{
+   unitsList.push({titulo:`Unidad ${unitsList.length+1}`,contenido:"",fecha:"",trabajo:"",alumnos:students.map(r=>({nombre:r.nombre,nota:"",observaciones:""}))});
+   saveUnits();renderUnits();
+  };
+ }
+ function updateUnitSummary(){
+  const vals=(U[subject]||[]).flatMap(u=>(u.alumnos||[]).map(st=>numero(st.nota)).filter(n=>Number.isFinite(n)&&n>=0&&n<=10));
+  const el=document.querySelector('.unit-summary');
+  if(!el)return;
+  const avg=vals.length?(vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(2).replace(".",","):"—";
+  const boxes=el.querySelectorAll('div');
+  if(boxes[2])boxes[2].querySelector('b').textContent=vals.length;
+  if(boxes[3])boxes[3].querySelector('b').textContent=avg;
+ }
+ select.onchange=renderUnits;
+ document.getElementById('unitSearch').oninput=renderUnits;
+ document.getElementById('unitPrint').onclick=()=>window.print();
+ document.getElementById('unitExport').onclick=()=>{
+  const unitsList=U[subject]||[],students=D[subject]||[];
+  const rows=[["Alumno",...unitsList.map(u=>u.titulo||"Unidad"),"Promedio","Estado"]];
+  students.forEach(st=>{
+   const vals=unitsList.map(u=>{const x=(u.alumnos||[]).find(x=>x.nombre===st.nombre);return x?x.nota:""});
+   const nums=vals.map(numero).filter(n=>Number.isFinite(n)&&n>=0&&n<=10);
+   const mean=nums.length?nums.reduce((a,b)=>a+b,0)/nums.length:null;
+   rows.push([st.nombre,...vals,mean===null?"":mean.toFixed(2),mean===null?"Sin calificar":mean>=6?"Aprobado":"Reforzar"]);
+  });
+  const csv=rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+  const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download=subject.replace(/[^a-z0-9]+/gi,"_")+"_unidades.csv";a.click();URL.revokeObjectURL(url);
+ };
+ renderUnits();
+}
+
+
+// Sesión independiente: temas vistos, comportamientos y partes/amonestaciones.
+// Se guarda por curso/materia y no modifica las notas ni las orientadoras.
+const CONVKEY="edugestion_convivencia_v1";
+let CONV={temas:{},comportamientos:{},sanciones:{}};
+try{const saved=JSON.parse(localStorage.getItem(CONVKEY));if(saved&&typeof saved==="object"&&!Array.isArray(saved))CONV={...CONV,...saved}}catch(e){}
+["temas","comportamientos","sanciones"].forEach(group=>{if(!CONV[group]||typeof CONV[group]!=="object"||Array.isArray(CONV[group]))CONV[group]={}});
+function saveConv(){try{localStorage.setItem(CONVKEY,JSON.stringify(CONV));const s=document.getElementById("save");if(s){s.textContent="● Convivencia guardada";s.classList.remove("is-error")}}catch(e){alert("No se pudo guardar esta sesión. Descargá una copia de seguridad del navegador.")}}
+
+// Registros nuevos: asistencia/trabajos, clases y eventos propios del calendario.
+const TRACKKEY="edugestion_asistencia_trabajos_v1";
+const CLASSKEY="edugestion_registro_clases_v1";
+const CALKEY="edugestion_eventos_calendario_v1";
+let TRACK={};let CLASSLOG={};let CUSTOM_EVENTS=[];
+try{TRACK=JSON.parse(localStorage.getItem(TRACKKEY))||{}}catch(e){TRACK={}}
+try{CLASSLOG=JSON.parse(localStorage.getItem(CLASSKEY))||{}}catch(e){CLASSLOG={}}
+try{CUSTOM_EVENTS=JSON.parse(localStorage.getItem(CALKEY))||[]}catch(e){CUSTOM_EVENTS=[]}
+function saveTrack(){try{localStorage.setItem(TRACKKEY,JSON.stringify(TRACK));setSaved("Asistencia y trabajos guardados")}catch(e){setSaved("No se pudo guardar",true)}}
+function saveClassLog(){try{localStorage.setItem(CLASSKEY,JSON.stringify(CLASSLOG));setSaved("Registro de clases guardado")}catch(e){setSaved("No se pudo guardar",true)}}
+function saveCustomEvents(){try{localStorage.setItem(CALKEY,JSON.stringify(CUSTOM_EVENTS));setSaved("Calendario guardado")}catch(e){setSaved("No se pudo guardar",true)}}
+function setSaved(message,error=false){const el=document.getElementById("save");if(el){el.textContent=(error?"! ":"● ")+message;el.classList.toggle("is-error",error)}}
+function todayISO(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}
+function localDateLabel(iso){if(!iso)return "";const p=iso.split("-");return p.length===3?`${p[2]}/${p[1]}/${p[0]}`:iso}
+function convArr(group,subject){
+ if(!CONV||typeof CONV!=="object")CONV={temas:{},comportamientos:{},sanciones:{}};
+ if(!CONV[group]||typeof CONV[group]!=="object"||Array.isArray(CONV[group]))CONV[group]={};
+ if(!Array.isArray(CONV[group][subject]))CONV[group][subject]=[];
+ return CONV[group][subject];
+}
+function convDate(){return new Date().toLocaleDateString("en-CA")}
+function convivencia(){
+ const subjects=Object.keys(D);
+ const subject=subjects.includes(chosen)?chosen:subjects[0];
+ let currentTab="temas";
+ const app=document.getElementById("app");
+ function students(){return D[subject]||[]}
+ function studentOptions(){return students().map((r,i)=>`<option value="${i}">${esc(r.nombre)}</option>`).join("")}
+ function entries(group){return convArr(group,subject)}
+ function render(){
+  const tabNames={temas:"Temas vistos",comportamientos:"Comportamientos",sanciones:"Partes y amonestaciones"};
+  const topics=entries("temas"),behaviors=entries("comportamientos"),sanctions=entries("sanciones");
+  app.innerHTML=`
+   <div class="notice"><b>Registro independiente de convivencia y seguimiento.</b> Esta sesión está separada de las notas, las orientadoras y las observaciones académicas. Los registros se guardan por curso/materia y solo se agregan a los alumnos seleccionados.</div>
+   <section class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+     <div><h3 style="margin:0">Convivencia y seguimiento</h3><p class="muted" style="margin:5px 0 0">Elegí una materia para registrar los temas trabajados y el seguimiento individual.</p></div>
+     <label style="font-size:12px;font-weight:750;color:#53647d">Curso / materia
+      <select id="convSubject" style="display:block;margin-top:5px;min-width:220px;padding:10px;border:1px solid #cbd5e1;border-radius:8px;background:white">${subjects.map(s=>`<option value="${esc(s)}" ${s===subject?"selected":""}>${esc(s)}</option>`).join("")}</select>
+     </label>
+    </div>
+    <div class="conv-tabs">
+     <button class="conv-tab ${currentTab==="temas"?"active":""}" data-tab="temas">📚 Temas vistos</button>
+     <button class="conv-tab ${currentTab==="comportamientos"?"active":""}" data-tab="comportamientos">🤝 Comportamientos</button>
+     <button class="conv-tab ${currentTab==="sanciones"?"active":""}" data-tab="sanciones">📋 Partes y amonestaciones</button>
+    </div>
+    <div id="convPanel"></div>
+   </section>`;
+  document.getElementById("convSubject").onchange=e=>{chosen=e.target.value;currentTab="temas";render()};
+  document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{currentTab=b.dataset.tab;render()});
+  renderTab();
+ }
+ function renderTab(){
+  const panel=document.getElementById("convPanel");
+  if(!panel)return;
+  if(currentTab==="temas"){
+   const list=entries("temas");
+   panel.innerHTML=`
+    <div class="conv-grid">
+     <div class="panel" style="background:#fbfcff"><h3>Registrar tema trabajado</h3><form id="topicForm" class="conv-form">
+      <label>Fecha<input name="fecha" type="date" value="${convDate()}" required></label>
+      <label>Unidad (opcional)<input name="unidad" placeholder="Ej.: Unidad 2"></label>
+      <label class="full">Tema visto<input name="tema" placeholder="Escribí el tema trabajado" required></label>
+      <label class="full">Descripción / actividades<textarea name="detalle" placeholder="Contenidos explicados, actividades o trabajos realizados"></textarea></label>
+      <button class="btn full" type="submit">＋ Guardar tema visto</button>
+     </form></div>
+     <div><h3>Temas registrados (${list.length})</h3>${list.length?list.slice().reverse().map((x,ri)=>{const i=list.length-1-ri;return `<article class="conv-entry"><div class="conv-entry-head"><b>${esc(x.tema)}</b><button class="btn gray" data-edit="temas" data-index="${i}">Editar</button><button class="btn redbtn" data-remove="temas" data-index="${i}">Eliminar</button></div><small>${esc(x.fecha||"Sin fecha")} · ${esc(x.unidad||"Sin unidad")}</small><p>${esc(x.detalle||"Sin descripción adicional")}</p></article>`}).join(""):'<div class="conv-empty">Todavía no hay temas registrados en esta materia.</div>'}</div>
+    </div>`;
+   document.getElementById("topicForm").onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget);entries("temas").push({fecha:f.get("fecha"),unidad:f.get("unidad").trim(),tema:f.get("tema").trim(),detalle:f.get("detalle").trim()});saveConv();renderTab()};
+  }else if(currentTab==="comportamientos"){
+   const list=entries("comportamientos");
+   panel.innerHTML=`
+    <div class="conv-grid">
+     <div class="panel" style="background:#fbfcff"><h3>Registrar comportamiento</h3><form id="behaviorForm" class="conv-form">
+      <label class="full">Alumno/a<select name="alumno" required>${studentOptions()}</select></label>
+      <label>Fecha<input name="fecha" type="date" value="${convDate()}" required></label>
+      <label>Tipo<select name="tipo"><option>Positivo</option><option>Para mejorar</option><option>Seguimiento</option></select></label>
+      <label class="full">Descripción<textarea name="detalle" placeholder="Describí de forma objetiva la situación observada" required></textarea></label>
+      <label class="full">Acuerdo / seguimiento<textarea name="seguimiento" placeholder="Acuerdo, acompañamiento o seguimiento, si corresponde"></textarea></label>
+      <button class="btn full" type="submit">＋ Guardar comportamiento</button>
+     </form></div>
+     <div><h3>Registros de comportamiento (${list.length})</h3>${list.length?list.slice().reverse().map((x,ri)=>{const i=list.length-1-ri;return `<article class="conv-entry"><div class="conv-entry-head"><b>${esc(x.alumno)}</b><span class="badge ${x.tipo==="Positivo"?"ok":x.tipo==="Para mejorar"?"pend":"rev"}">${esc(x.tipo)}</span><button class="btn gray" data-edit="comportamientos" data-index="${i}">Editar</button><button class="btn redbtn" data-remove="comportamientos" data-index="${i}">Eliminar</button></div><small>${esc(x.fecha||"Sin fecha")}</small><p>${esc(x.detalle)}</p>${x.seguimiento?`<p><b>Seguimiento:</b> ${esc(x.seguimiento)}</p>`:""}</article>`}).join(""):'<div class="conv-empty">Todavía no hay comportamientos registrados.</div>'}</div>
+    </div>`;
+   document.getElementById("behaviorForm").onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget),ix=Number(f.get("alumno"));entries("comportamientos").push({alumno:students()[ix]?.nombre||"",fecha:f.get("fecha"),tipo:f.get("tipo"),detalle:f.get("detalle").trim(),seguimiento:f.get("seguimiento").trim()});saveConv();renderTab()};
+  }else{
+   const list=entries("sanciones");
+   panel.innerHTML=`
+    <div class="notice">Esta sección es solo para los estudiantes que tengan un registro. No se crea ningún parte ni amonestación automáticamente: cada anotación debe cargarse manualmente cuando corresponda.</div>
+    <div class="conv-grid">
+     <div class="panel" style="background:#fbfcff"><h3>Registrar parte o amonestación</h3><form id="sanctionForm" class="conv-form">
+      <label class="full">Alumno/a<select name="alumno" required>${studentOptions()}</select></label>
+      <label>Fecha<input name="fecha" type="date" value="${convDate()}" required></label>
+      <label>Tipo de registro<select name="tipo"><option>Parte</option><option>Amonestación</option></select></label>
+      <label class="full">Motivo<textarea name="motivo" placeholder="Motivo del registro" required></textarea></label>
+      <label class="full">Descripción / observaciones<textarea name="detalle" placeholder="Descripción objetiva de lo ocurrido"></textarea></label>
+      <label class="full">Medida o seguimiento<textarea name="seguimiento" placeholder="Medida tomada o seguimiento, si corresponde"></textarea></label>
+      <button class="btn full" type="submit">＋ Guardar registro</button>
+     </form></div>
+     <div><h3>Partes y amonestaciones (${list.length})</h3>${list.length?list.slice().reverse().map((x,ri)=>{const i=list.length-1-ri;return `<article class="conv-entry"><div class="conv-entry-head"><b>${esc(x.alumno)}</b><span class="badge ${x.tipo==="Amonestación"?"bad":"pend"}">${esc(x.tipo)}</span><button class="btn gray" data-edit="sanciones" data-index="${i}">Editar</button><button class="btn redbtn" data-remove="sanciones" data-index="${i}">Eliminar</button></div><small>${esc(x.fecha||"Sin fecha")}</small><p><b>Motivo:</b> ${esc(x.motivo)}</p>${x.detalle?`<p>${esc(x.detalle)}</p>`:""}${x.seguimiento?`<p><b>Seguimiento:</b> ${esc(x.seguimiento)}</p>`:""}</article>`}).join(""):'<div class="conv-empty">No hay partes ni amonestaciones cargados. Podés registrar solo a los alumnos que corresponda.</div>'}</div>
+    </div>`;
+   document.getElementById("sanctionForm").onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget),ix=Number(f.get("alumno"));entries("sanciones").push({alumno:students()[ix]?.nombre||"",fecha:f.get("fecha"),tipo:f.get("tipo"),motivo:f.get("motivo").trim(),detalle:f.get("detalle").trim(),seguimiento:f.get("seguimiento").trim()});saveConv();renderTab()};
+  }
+  panel.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{
+   const group=b.dataset.edit,index=Number(b.dataset.index),item=entries(group)[index];if(!item)return;
+   const fields=group==="temas"?[["fecha","Fecha"],["unidad","Unidad"],["tema","Tema visto"],["detalle","Descripción / actividades"]]:
+    group==="comportamientos"?[["fecha","Fecha"],["tipo","Tipo (Positivo / Para mejorar / Seguimiento)"],["detalle","Descripción"],["seguimiento","Acuerdo / seguimiento"]]:
+    [["fecha","Fecha"],["tipo","Tipo (Parte / Amonestación)"],["motivo","Motivo"],["detalle","Descripción"],["seguimiento","Medida / seguimiento"]];
+   for(const [key,label] of fields){const value=prompt(label,item[key]??"");if(value===null)return;item[key]=value.trim()}
+   if(group==="comportamientos"&&!["Positivo","Para mejorar","Seguimiento"].includes(item.tipo)){alert("Tipo no válido. Usá Positivo, Para mejorar o Seguimiento.");return}
+   if(group==="sanciones"&&!["Parte","Amonestación"].includes(item.tipo)){alert("Tipo no válido. Usá Parte o Amonestación.");return}
+   saveConv();renderTab();
+  });
+  panel.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{const group=b.dataset.remove,index=Number(b.dataset.index);if(confirm("¿Eliminar este registro?")){CONV[group][subject].splice(index,1);saveConv();renderTab()}});
+ }
+ render();
+}
+
+function tracking(){
+ const subjects=Object.keys(D);let subject=subjects.includes(chosen)?chosen:subjects[0];let date=todayISO();
+ const app=document.getElementById("app");
+ function getDay(){if(!TRACK[subject])TRACK[subject]={};if(!TRACK[subject][date])TRACK[subject][date]={actividad:"",rows:{}};return TRACK[subject][date]}
+ function render(){
+  const students=D[subject]||[],day=getDay();
+  const rows=students.map((student,i)=>{
+   const row=day.rows[student.nombre]||{asistencia:"",trabajo:"",observacion:""};
+   return `<tr><td>${i+1}</td><th class="track-name">${esc(student.nombre)}</th><td><select data-track="${i}:asistencia"><option value="">Sin registrar</option>${["Presente","Ausente","Tarde","Ausente justificado"].map(v=>`<option ${row.asistencia===v?"selected":""}>${v}</option>`).join("")}</select></td><td><select data-track="${i}:trabajo"><option value="">Sin registrar</option>${["Entregado","Pendiente","No corresponde"].map(v=>`<option ${row.trabajo===v?"selected":""}>${v}</option>`).join("")}</select></td><td><input data-track="${i}:observacion" value="${esc(row.observacion||"")}" placeholder="Observación breve"></td></tr>`;
+  }).join("");
+  const vals=Object.values(day.rows||{});
+  const present=vals.filter(x=>x.asistencia==="Presente").length,absent=vals.filter(x=>x.asistencia==="Ausente"||x.asistencia==="Ausente justificado").length,late=vals.filter(x=>x.asistencia==="Tarde").length,workPending=vals.filter(x=>x.trabajo==="Pendiente").length,workDone=vals.filter(x=>x.trabajo==="Entregado").length;
+  app.innerHTML=`<div class="notice"><b>Registro de asistencia y trabajos.</b> Elegí curso/materia y fecha. Los estados empiezan vacíos: completá solo lo que hayas verificado. Esta sección es independiente de las notas finales y de convivencia.</div>
+  <section class="panel"><div class="track-controls"><label>Curso / materia<select id="trackSubject">${subjects.map(s=>`<option value="${esc(s)}" ${s===subject?"selected":""}>${esc(s)}</option>`).join("")}</select></label><label>Fecha<input id="trackDate" type="date" value="${date}"></label></div>
+  <div class="track-summary"><div><small>Presentes</small><b>${present}</b></div><div><small>Ausentes</small><b>${absent}</b></div><div><small>Llegadas tarde</small><b>${late}</b></div><div><small>Trabajos entregados</small><b>${workDone}</b></div><div><small>Trabajos pendientes</small><b>${workPending}</b></div></div>
+  <label class="activity-label">Trabajo o actividad del día<input id="trackActivity" value="${esc(day.actividad||"")}" placeholder="Ej.: actividad de Unidad 2"></label>
+  <div class="tablewrap"><table class="track-table"><thead><tr><th>N.º</th><th>Alumno/a</th><th>Asistencia</th><th>Trabajo</th><th>Observación</th></tr></thead><tbody>${rows||`<tr><td colspan="5">No hay alumnos cargados en esta materia.</td></tr>`}</tbody></table></div>
+  <div class="track-footer"><button class="btn gray" id="trackPrint">Imprimir registro</button><button class="btn" id="trackExport">Exportar CSV</button></div>
+  </section>`;
+  document.getElementById("trackSubject").onchange=e=>{subject=e.target.value;chosen=subject;render()};
+  document.getElementById("trackDate").onchange=e=>{date=e.target.value||todayISO();render()};
+  document.getElementById("trackActivity").onchange=e=>{getDay().actividad=e.target.value;saveTrack()};
+  document.querySelectorAll("[data-track]").forEach(el=>el.onchange=()=>{
+   const [idx,field]=el.dataset.track.split(":");const student=students[Number(idx)];const dayNow=getDay();
+   if(!dayNow.rows[student.nombre])dayNow.rows[student.nombre]={asistencia:"",trabajo:"",observacion:""};
+   dayNow.rows[student.nombre][field]=el.value;saveTrack();render();
+  });
+  document.getElementById("trackPrint").onclick=()=>window.print();
+  document.getElementById("trackExport").onclick=()=>{
+   const data=[["Alumno","Fecha","Asistencia","Trabajo","Actividad","Observación"],...students.map(st=>{const r=day.rows[st.nombre]||{};return [st.nombre,localDateLabel(date),r.asistencia||"",r.trabajo||"",day.actividad||"",r.observacion||""]})];
+   const csv=data.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+   const url=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"})),a=document.createElement("a");a.href=url;a.download=`asistencia_${subject.replace(/[^a-z0-9]+/gi,"_")}_${date}.csv`;a.click();URL.revokeObjectURL(url);
+  };
+ }
+ render();
+}
+function classlog(){
+ const subjects=Object.keys(D);let subject=subjects.includes(chosen)?chosen:subjects[0];const app=document.getElementById("app");
+ function list(){if(!Array.isArray(CLASSLOG[subject]))CLASSLOG[subject]=[];return CLASSLOG[subject]}
+ function render(){
+  const entries=list().slice().sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
+  const unitOptions=(U[subject]||[]).map((u,i)=>`<option value="${esc(u.titulo||`Unidad ${i+1}`)}">${esc(u.titulo||`Unidad ${i+1}`)}</option>`).join("");
+  app.innerHTML=`<div class="notice"><b>Registro de clases.</b> Anotá qué se enseñó en cada encuentro, qué actividades se realizaron y qué queda para la próxima clase. No modifica las notas ni el estado de los alumnos.</div>
+  <section class="panel"><div class="track-controls"><label>Curso / materia<select id="classSubject">${subjects.map(s=>`<option value="${esc(s)}" ${s===subject?"selected":""}>${esc(s)}</option>`).join("")}</select></label></div>
+  <form id="classForm" class="lesson-form">
+   <label>Fecha<input type="date" name="fecha" value="${todayISO()}" required></label>
+   <label>Unidad<select name="unidad"><option value="">Sin unidad seleccionada</option>${unitOptions}</select></label>
+   <label class="lesson-wide">Tema explicado<input name="tema" maxlength="180" placeholder="Ej.: características de los ecosistemas" required></label>
+   <label class="lesson-wide">Contenidos y explicación<textarea name="contenido" rows="3" placeholder="Anotá los contenidos trabajados"></textarea></label>
+   <label class="lesson-wide">Actividades realizadas<textarea name="actividades" rows="3" placeholder="Actividades, ejercicios, lecturas o trabajos"></textarea></label>
+   <label class="lesson-wide">Para la próxima clase<textarea name="proxima" rows="2" placeholder="Tarea, material o tema para continuar"></textarea></label>
+   <button class="btn lesson-wide" type="submit">＋ Guardar clase</button>
+  </form></section>
+  <section class="panel" style="margin-top:14px"><div class="section-heading"><div><h3>Historial de clases</h3><p class="muted">${entries.length} registro(s) guardados en ${esc(subject)}</p></div><button class="btn gray" id="classPrint">Imprimir historial</button></div>
+  ${entries.length?entries.map((e,i)=>`<article class="lesson-entry"><div class="lesson-entry-head"><b>${localDateLabel(e.fecha)} · ${esc(e.tema)}</b><span>${esc(e.unidad||"Sin unidad")}</span></div>${e.contenido?`<p><b>Contenidos:</b> ${esc(e.contenido)}</p>`:""}${e.actividades?`<p><b>Actividades:</b> ${esc(e.actividades)}</p>`:""}${e.proxima?`<p><b>Próxima clase:</b> ${esc(e.proxima)}</p>`:""}<button class="btn redbtn" data-class-del="${esc(e.id)}">Eliminar registro</button></article>`).join(""):'<p class="muted">Todavía no hay clases registradas para esta materia.</p>'}
+  </section>`;
+  document.getElementById("classSubject").onchange=e=>{subject=e.target.value;chosen=subject;render()};
+  document.getElementById("classForm").onsubmit=e=>{
+   e.preventDefault();const f=new FormData(e.target);
+   const entry={id:`${Date.now()}_${Math.random().toString(36).slice(2,7)}`,fecha:String(f.get("fecha")||""),unidad:String(f.get("unidad")||""),tema:String(f.get("tema")||"").trim(),contenido:String(f.get("contenido")||"").trim(),actividades:String(f.get("actividades")||"").trim(),proxima:String(f.get("proxima")||"").trim()};
+   if(!entry.tema){alert("Escribí el tema explicado.");return}
+   list().push(entry);saveClassLog();render();
+  };
+  document.getElementById("classPrint").onclick=()=>window.print();
+  document.querySelectorAll("[data-class-del]").forEach(btn=>btn.onclick=()=>{
+   if(confirm("¿Eliminar este registro de clase?")){CLASSLOG[subject]=list().filter(e=>e.id!==btn.dataset.classDel);saveClassLog();render()}
+  });
+ }
+ render();
+}
+function calendar(){
+ const events=[
+ {date:"Hasta el 5 de diciembre de 2026",title:"Finalización de clases",kind:"Cierre del ciclo lectivo",desc:"Último día de clases."},
+ {date:"6 al 13 de diciembre de 2026",title:"Profundización e intensificación",kind:"Dos recorridos",desc:"Profundización: para estudiantes aprobados que asistan, con tareas y actividades sobre lo trabajado durante el año. Intensificación: para quienes desaprobaron una o más materias o contenidos."},
+ {date:"14 al 24 de diciembre de 2026",title:"Intensificación",kind:"Solo intensificación",desc:"Se desarrollan únicamente actividades de intensificación para estudiantes que adeudan materias o contenidos."},
+ {date:"25 al 30 de diciembre de 2026",title:"Cierre de notas",kind:"Cierre administrativo",desc:"Cierre de las notas finales del segundo cuatrimestre."},
+ {date:"9 al 17 de enero de 2027",title:"Primera instancia de intensificación",kind:"Primera instancia",desc:"Primera instancia de intensificación para estudiantes con materias o contenidos pendientes."},
+ {date:"18 al 21 de enero de 2027",title:"Recuperación de pendientes",kind:"Recuperación",desc:"Recuperación de contenidos y actividades pendientes."},
+ {date:"22 al 25 de enero de 2027",title:"Segunda instancia de intensificación",kind:"Segunda instancia",desc:"Segunda instancia de intensificación."},
+ {date:"1 al 4 de febrero de 2027",title:"Última intensificación y evaluaciones pendientes",kind:"Instancia final · evaluaciones integradoras",desc:"Última instancia de intensificación y evaluación de pendientes. Solo durante estas fechas se realizan las evaluaciones integradoras de toda la materia."}
+ ];
+ const app=document.getElementById("app");
+ function render(){
+  app.innerHTML=`<div class="notice"><b>Cronograma académico 2026–2027.</b> Las fechas institucionales indicadas se mantienen como referencia. Abajo podés agregar tus propios exámenes, entregas, reuniones y recordatorios.</div>
+  <section class="panel"><h3>Cronograma escolar</h3>${events.map((e,i)=>`<article class="student"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><b>${e.date}</b><span class="badge ${i===7?'pend':i===0?'none':'rev'}">${e.kind}</span></div><h3 style="margin:7px 0">${e.title}</h3><p style="margin:0;color:#52627a">${e.desc}</p>${i===7?`<ul style="color:#52627a;line-height:1.8"><li>Evaluación escrita integradora de toda la materia.</li><li>Defensa oral de los contenidos fundamentales.</li><li>Resolución de situaciones problemáticas.</li><li>Presentación obligatoria de trabajos.</li><li>Evaluación individual ante el profesor.</li></ul><b>Criterio de aprobación: de 6,50 a 10.</b>`:""}</article>`).join("")}</section>
+  <section class="panel" style="margin-top:14px"><h3>Agregar evento al calendario</h3><form id="eventForm" class="event-form">
+   <label>Fecha<input type="date" name="fecha" required></label>
+   <label>Tipo<select name="tipo"><option>Examen</option><option>Entrega de trabajo</option><option>Reunión</option><option>Feriado / sin clases</option><option>Recordatorio</option><option>Otro</option></select></label>
+   <label>Curso / materia<select name="materia"><option value="General">General</option>${Object.keys(D).map(k=>`<option value="${esc(k)}">${esc(k)}</option>`).join("")}</select></label>
+   <label class="event-wide">Título<input name="titulo" maxlength="140" placeholder="Ej.: Evaluación de Unidad 3" required></label>
+   <label class="event-wide">Descripción<textarea name="descripcion" rows="2" placeholder="Detalles, materiales o indicaciones"></textarea></label>
+   <button class="btn event-wide" type="submit">＋ Guardar evento</button>
+  </form></section>
+  <section class="panel" style="margin-top:14px"><h3>Mis eventos</h3>${CUSTOM_EVENTS.length?CUSTOM_EVENTS.slice().sort((a,b)=>a.fecha.localeCompare(b.fecha)).map(e=>`<article class="event-mini event-row"><div><b>${localDateLabel(e.fecha)} · ${esc(e.titulo)}</b><small>${esc(e.tipo)} · ${esc(e.materia||"General")}</small>${e.descripcion?`<p>${esc(e.descripcion)}</p>`:""}</div><button class="btn redbtn" data-event-del="${esc(e.id)}">Eliminar</button></article>`).join(""):'<p class="muted">No agregaste eventos personalizados todavía.</p>'}</section>`;
+  document.getElementById("eventForm").onsubmit=e=>{
+   e.preventDefault();const f=new FormData(e.target),entry={id:`${Date.now()}_${Math.random().toString(36).slice(2,7)}`,fecha:String(f.get("fecha")||""),tipo:String(f.get("tipo")||"Otro"),materia:String(f.get("materia")||"General"),titulo:String(f.get("titulo")||"").trim(),descripcion:String(f.get("descripcion")||"").trim()};
+   if(!entry.fecha||!entry.titulo){alert("Completá la fecha y el título.");return}
+   CUSTOM_EVENTS.push(entry);saveCustomEvents();render();
+  };
+  document.querySelectorAll("[data-event-del]").forEach(btn=>btn.onclick=()=>{if(confirm("¿Eliminar este evento?")){CUSTOM_EVENTS=CUSTOM_EVENTS.filter(e=>e.id!==btn.dataset.eventDel);saveCustomEvents();render()}});
+ }
+ render();
+}
+function feb(){let items=[];Object.entries(D).forEach(([k,v])=>v.forEach(r=>{r.situacion=statusFor(r);if(r.situacion==="Desaprobado"||r.situacion==="Intensificación / adeuda"||r.situacion==="Pendiente")items.push({k,r})}));document.getElementById("app").innerHTML=`<div class="notice">Informe editable según las situaciones asignadas. No reemplaza un acta oficial; completá contenidos, trabajos y fechas cuando corresponda.</div><section class="panel"><h3>Alumnos para intensificación / seguimiento (${items.length})</h3>${items.map(x=>`<div class="student"><b>${esc(x.r.nombre)} · ${esc(x.k)}</b><div>${badge(x.r.situacion)} Nota final: ${esc(x.r.nota2||x.r.nota||"sin nota")}</div><small>${esc(x.r.observaciones||"Completar contenidos, trabajos y evaluación.")}</small></div>`).join("")||"No hay alumnos marcados."}</section>`}
+function reports(){
+ const entries=Object.entries(D).flatMap(([materia,alumnos])=>alumnos.map(r=>({materia,r,estado:statusFor(r)})));
+ const total=entries.length,ap=entries.filter(x=>x.estado==="Aprobado").length,des=entries.filter(x=>x.estado==="Desaprobado").length,pend=entries.filter(x=>["Pendiente","Intensificación / adeuda"].includes(x.estado)).length;
+ const graded=entries.flatMap(x=>[numero(x.r.nota),numero(x.r.nota2)]).filter(x=>Number.isFinite(x)&&x>=0&&x<=10),avg=graded.length?(graded.reduce((a,b)=>a+b,0)/graded.length).toFixed(2).replace(".",","):"—";
+ document.getElementById("app").innerHTML=`<div class="notice">Resumen de seguimiento construido con las notas y estados cargados. Los registros sin calificar no entran en el promedio.</div><div class="cards"><div class="card"><small>Total de registros</small><div class="num">${total}</div></div><div class="card"><small>Promedio general de notas finales</small><div class="num">${avg}</div></div><div class="card"><small>Aprobados</small><div class="num green">${ap}</div></div><div class="card"><small>Desaprobados</small><div class="num red">${des}</div></div></div><section class="panel"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap"><h3>Informe por materia</h3><div class="tools"><button class="btn" id="exportReport">Descargar CSV (compatible con Excel)</button><button class="btn gray" id="printReport">Imprimir / Guardar PDF</button></div></div><div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Curso / materia</th><th>Alumnos</th><th>Aprobados</th><th>Desaprobados</th><th>Pendientes / intensificación</th><th>Sin calificar</th><th>Promedio</th></tr></thead><tbody>${Object.entries(D).map(([k,v])=>{let g=v.flatMap(r=>[numero(r.nota),numero(r.nota2)]).filter(n=>Number.isFinite(n)&&n>=0&&n<=10),mean=g.length?(g.reduce((a,b)=>a+b,0)/g.length).toFixed(2).replace(".",","):"—";return `<tr><td>${esc(k)}</td><td>${v.length}</td><td>${v.filter(r=>statusFor(r)==="Aprobado").length}</td><td>${v.filter(r=>statusFor(r)==="Desaprobado").length}</td><td>${v.filter(r=>["Pendiente","Intensificación / adeuda"].includes(statusFor(r))).length}</td><td>${v.filter(r=>statusFor(r)==="Sin calificar").length}</td><td>${mean}</td></tr>`}).join("")}</tbody></table></div><p class="muted">Pendientes e intensificación: ${pend}. Promedios calculados con Nota final 1 y Nota final 2 disponibles, solo con valores numéricos válidos.</p></section><section class="panel" style="margin-top:14px"><h3>Alumnos para recuperación e intensificación</h3><div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Alumno/a</th><th>Curso / materia</th><th>Estado</th><th>Nota final</th><th>Qué adeuda / observaciones</th></tr></thead><tbody>${entries.filter(x=>["Desaprobado","Pendiente","Intensificación / adeuda"].includes(x.estado)).map(x=>`<tr><td>${esc(x.r.nombre)}</td><td>${esc(x.materia)}</td><td>${esc(x.estado)}</td><td>${esc(x.r.nota2||x.r.nota||"—")}</td><td>${esc(x.r.adeuda||x.r.observaciones||"Completar seguimiento")}</td></tr>`).join("")||'<tr><td colspan="5">No hay alumnos marcados para recuperación o intensificación.</td></tr>'}</tbody></table></div></section><section class="panel" style="margin-top:14px"><h3>Detalle individual por alumno</h3><div class="tools"><input id="reportSearch" placeholder="Buscar alumno o materia..."></div><div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Alumno/a</th><th>Curso / materia</th><th>Nota final 1</th><th>Nota final 2</th><th>Estado</th><th>Observaciones</th><th>Adeuda</th></tr></thead><tbody id="individualRows">${entries.map(x=>`<tr><td>${esc(x.r.nombre)}</td><td>${esc(x.materia)}</td><td>${esc(x.r.nota||"—")}</td><td>${esc(x.r.nota2||"—")}</td><td>${esc(x.estado)}</td><td>${esc(x.r.observaciones||"—")}</td><td>${esc(x.r.adeuda||"—")}</td></tr>`).join("")}</tbody></table></div></section>`;
+ document.getElementById("printReport").onclick=()=>window.print();
+ document.getElementById("exportReport").onclick=()=>{
+  const rows=[["Alumno/a","Curso / materia","Nota final 1","Nota final 2","Estado","Orientadora 1","Orientadora 2","Observaciones","Adeuda"]];
+  entries.forEach(x=>rows.push([x.r.nombre,x.materia,x.r.nota||"",x.r.nota2||"",x.estado,x.r.orientadora||"",x.r.orientadora2||"",x.r.observaciones||"",x.r.adeuda||""]));
+  const csv="\ufeff"+rows.map(row=>row.map(value=>'"'+String(value??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+  const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));const a=document.createElement("a");a.href=url;a.download="Informe_EduGestion.csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+ };
+ document.getElementById("reportSearch").oninput=e=>{const q=e.target.value.toLocaleLowerCase("es");document.querySelectorAll("#individualRows tr").forEach(tr=>tr.style.display=tr.textContent.toLocaleLowerCase("es").includes(q)?"":"none")};
+}
+function bulletins(){
+ const subjects=Object.keys(D);
+ const names=[...new Set(Object.values(D).flat().map(r=>String(r.nombre||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+ document.getElementById("app").innerHTML=`<div class="notice">Elegí un alumno para generar su boletín con todas las materias en las que aparece. El documento toma las notas y estados actuales: al modificar una calificación, el boletín se actualiza automáticamente al volver a generarlo.</div><section class="panel"><h3>Generar boletín individual</h3><div class="tools"><select id="bulletinStudent"><option value="">Seleccionar alumno/a</option>${names.map(n=>`<option value="${esc(n)}">${esc(n)}</option>`).join("")}</select><button class="btn" id="makeBulletin">Generar boletín</button><button class="btn gray" id="printBulletin" disabled>Imprimir / Guardar PDF</button></div><div id="bulletinPreview" class="muted">Seleccioná un alumno y tocá «Generar boletín».</div></section>`;
+ document.getElementById("makeBulletin").onclick=()=>{
+  const name=document.getElementById("bulletinStudent").value;if(!name){alert("Seleccioná un alumno.");return}
+  const rows=[];subjects.forEach(subject=>(D[subject]||[]).filter(r=>r.nombre===name).forEach(r=>rows.push({subject,r,state:statusFor(r)})));
+  const avgVals=rows.flatMap(x=>[numero(x.r.nota),numero(x.r.nota2)]).filter(n=>Number.isFinite(n)&&n>=0&&n<=10);
+  const avg=avgVals.length?(avgVals.reduce((a,b)=>a+b,0)/avgVals.length).toFixed(2).replace(".",","):"—";
+  document.getElementById("bulletinPreview").innerHTML=`<div class="bulletin-sheet" id="bulletinSheet"><div class="bulletin-head"><div><small>${esc(SETTINGS.escuela||"Institución educativa")}</small><h2>Boletín de calificaciones</h2><p>Ciclo lectivo ${esc(SETTINGS.ciclo||"2026–2027")}</p></div><div class="bulletin-logo">${esc(SETTINGS.logo||"EG")}</div></div><h3>${esc(name)}</h3><div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Curso / materia</th><th>Nota final 1</th><th>Orientadora 1</th><th>Nota final 2</th><th>Orientadora 2</th><th>Estado</th><th>Observaciones</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.subject)}</td><td>${esc(x.r.nota||"—")}</td><td>${esc(x.r.orientadora||"—")}</td><td>${esc(x.r.nota2||"—")}</td><td>${esc(x.r.orientadora2||"—")}</td><td>${esc(x.state)}</td><td>${esc(x.r.adeuda||x.r.observaciones||x.r.mensaje||"—")}</td></tr>`).join("")||'<tr><td colspan="7">No hay materias registradas para este alumno.</td></tr>'}</tbody></table></div><p><b>Promedio de calificaciones disponibles:</b> ${avg}</p><p class="muted">Documento informativo generado con los datos guardados en EduGestión. Verificar antes de utilizar como boletín oficial.</p></div>`;
+  document.getElementById("printBulletin").disabled=!rows.length;
+ };
+ document.getElementById("printBulletin").onclick=()=>{const sheet=document.getElementById("bulletinSheet");if(!sheet)return;const w=window.open("","_blank");if(!w){alert("Permití las ventanas emergentes para imprimir el boletín.");return}w.document.write(`<!doctype html><html lang="es"><meta charset="utf-8"><title>Boletín EduGestión</title><style>body{font:14px Arial;color:#17243a;padding:24px}h2{margin:8px 0}.bulletin-head{display:flex;justify-content:space-between;border-bottom:2px solid #243f67;padding-bottom:14px;margin-bottom:20px}.bulletin-logo{font-size:24px;font-weight:bold;border:2px solid #243f67;border-radius:12px;padding:12px;height:max-content}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccd5e2;padding:8px;text-align:left}th{background:#eef2f8}.muted{color:#667085;font-size:11px}@media print{body{padding:0}}</style>${sheet.outerHTML}<script>window.onload=()=>window.print()<\/script></html>`);w.document.close()};
+}
+
+function profiles(){
+ const names=[...new Set(Object.values(D).flat().map(r=>String(r.nombre||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+ document.getElementById("app").innerHTML=`
+ <div class="notice"><b>Ficha integral del alumno.</b> Reúne sus materias, las dos notas finales, orientadores A1/A2, estados académicos, asistencia, trabajos y registros de seguimiento disponibles. La información se actualiza con los datos guardados en EduGestión.</div>
+ <section class="panel">
+  <h3>Buscar alumno/a</h3>
+  <div class="tools"><select id="profileStudent"><option value="">Seleccionar alumno/a</option>${names.map(n=>`<option value="${esc(n)}">${esc(n)}</option>`).join("")}</select><button class="btn" id="loadProfile">Abrir ficha</button><button class="btn gray" id="printProfile" disabled>Imprimir / Guardar PDF</button><button class="btn gray" id="exportProfile" disabled>Exportar CSV</button></div>
+  <div id="profileContent" class="muted">Seleccioná un alumno para consultar su ficha.</div>
+ </section>`;
+ let selectedRows=[];
+ let selectedName="";
+ document.getElementById("loadProfile").onclick=()=>{
+  selectedName=document.getElementById("profileStudent").value;
+  if(!selectedName){alert("Seleccioná un alumno.");return}
+  selectedRows=Object.entries(D).flatMap(([materia,alumnos])=>alumnos.filter(r=>r.nombre===selectedName).map(r=>({materia,r,estado:statusFor(r)})));
+  const unitEntries=[];
+  const topicEntries=[];
+  selectedRows.forEach(({materia})=>{
+   (Array.isArray(U[materia])?U[materia]:[]).forEach((unit,i)=>{
+    const student=(unit.alumnos||[]).find(st=>st.nombre===selectedName);
+    if(student&&(String(student.nota??"").trim()||String(student.observaciones??"").trim()))unitEntries.push({materia,unidad:unit.titulo||`Unidad ${i+1}`,nota:student.nota||"—",observaciones:student.observaciones||""});
+   });
+   (Array.isArray(CONV?.temas?.[materia])?CONV.temas[materia]:[]).forEach(topic=>topicEntries.push({materia,...topic}));
+  });
+  const attendance=[];
+  Object.entries(TRACK||{}).forEach(([materia,days])=>{
+   Object.entries(days||{}).forEach(([fecha,day])=>{
+    const row=(day.rows||{})[selectedName];
+    if(row && (row.asistencia||row.trabajo||row.observacion)){
+     attendance.push({materia,fecha,asistencia:row.asistencia||"Sin registrar",trabajo:row.trabajo||"Sin registrar",observacion:row.observacion||"",actividad:day.actividad||""});
+    }
+   });
+  });
+  attendance.sort((a,b)=>b.fecha.localeCompare(a.fecha));
+  const present=attendance.filter(x=>x.asistencia==="Presente").length;
+  const absent=attendance.filter(x=>x.asistencia==="Ausente"||x.asistencia==="Ausente justificado").length;
+  const late=attendance.filter(x=>x.asistencia==="Tarde").length;
+  const pending=attendance.filter(x=>x.trabajo==="Pendiente").length;
+  // Los registros de convivencia se guardan agrupados por curso/materia.
+  // Se reúnen aquí para que la ficha individual consulte todas las materias.
+  const behavior=Object.values(CONV?.comportamientos||{}).flatMap(x=>Array.isArray(x)?x:[]).filter(x=>x.alumno===selectedName);
+  const sanctions=Object.values(CONV?.sanciones||{}).flatMap(x=>Array.isArray(x)?x:[]).filter(x=>x.alumno===selectedName);
+  const subjectRows=selectedRows.map(x=>`<tr><td>${esc(x.materia)}</td><td>${esc(x.r.nota||"—")}</td><td>${esc(x.r.orientadora||"—")}</td><td>${esc(x.r.nota2||"—")}</td><td>${esc(x.r.orientadora2||"—")}</td><td>${badge(x.estado)}</td><td>${esc(x.r.adeuda||x.r.observaciones||"—")}</td></tr>`).join("");
+  const unitRows=unitEntries.map(x=>`<tr><td>${esc(x.materia)}</td><td>${esc(x.unidad)}</td><td>${esc(x.nota)}</td><td>${esc(x.observaciones||"—")}</td></tr>`).join("");
+  const topicRows=topicEntries.map(x=>`<tr><td>${esc(localDateLabel(x.fecha)||"—")}</td><td>${esc(x.materia)}</td><td>${esc(x.unidad||"—")}</td><td>${esc(x.tema||"—")}</td><td>${esc(x.detalle||"—")}</td></tr>`).join("");
+  const attendanceRows=attendance.map(x=>`<tr><td>${esc(localDateLabel(x.fecha))}</td><td>${esc(x.materia)}</td><td>${esc(x.asistencia)}</td><td>${esc(x.trabajo)}</td><td>${esc(x.observacion||x.actividad||"—")}</td></tr>`).join("");
+  const behaviorRows=behavior.map(x=>`<tr><td>${esc(x.fecha||"—")}</td><td>${esc(x.tipo||"—")}</td><td>${esc(x.detalle||"—")}</td><td>${esc(x.seguimiento||"—")}</td></tr>`).join("");
+  const sanctionRows=sanctions.map(x=>`<tr><td>${esc(x.fecha||"—")}</td><td>${esc(x.tipo||"Registro")}</td><td>${esc([x.motivo,x.detalle,x.seguimiento].filter(Boolean).join(" · ")||x.descripcion||"—")}</td></tr>`).join("");
+  const approved=selectedRows.filter(x=>x.estado==="Aprobado").length;
+  const failed=selectedRows.filter(x=>x.estado==="Desaprobado").length;
+  const pendingGrades=selectedRows.filter(x=>["Pendiente","Intensificación / adeuda"].includes(x.estado)).length;
+  document.getElementById("profileContent").innerHTML=`
+   <div class="bulletin-sheet" id="profileSheet">
+    <div class="bulletin-head"><div><small>${esc(SETTINGS.escuela||"Institución educativa")}</small><h2>Ficha integral del alumno</h2><p>Ciclo lectivo ${esc(SETTINGS.ciclo||"2026–2027")}</p></div><div class="bulletin-logo">${esc(SETTINGS.logo||"EG")}</div></div>
+    <h2>${esc(selectedName)}</h2>
+    <div class="cards">
+     <div class="card"><small>Materias registradas</small><div class="num">${selectedRows.length}</div></div>
+     <div class="card"><small>Aprobadas</small><div class="num green">${approved}</div></div>
+     <div class="card"><small>Desaprobadas</small><div class="num red">${failed}</div></div>
+     <div class="card"><small>Pendientes / intensificación</small><div class="num yellow">${pendingGrades}</div></div>
+    </div>
+    <h3>Calificaciones y orientadores</h3>
+    <div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Curso / materia</th><th>Nota final 1</th><th>Orientador A1</th><th>Nota final 2</th><th>Orientador A2</th><th>Estado actual</th><th>Adeuda / observaciones</th></tr></thead><tbody>${subjectRows||'<tr><td colspan="7">No hay materias registradas.</td></tr>'}</tbody></table></div>
+    <h3 style="margin-top:20px">Notas de unidades</h3>
+    <div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Materia</th><th>Unidad</th><th>Nota</th><th>Observaciones</th></tr></thead><tbody>${unitRows||'<tr><td colspan="4">No hay notas u observaciones de unidades cargadas para este alumno.</td></tr>'}</tbody></table></div>
+    <h3 style="margin-top:20px">Temas trabajados en sus materias</h3>
+    <div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Materia</th><th>Unidad</th><th>Tema</th><th>Actividades / descripción</th></tr></thead><tbody>${topicRows||'<tr><td colspan="5">No hay temas registrados en las materias de este alumno.</td></tr>'}</tbody></table></div>
+    <h3 style="margin-top:20px">Asistencia y trabajos registrados</h3>
+    <div class="cards"><div class="card"><small>Presentes</small><div class="num green">${present}</div></div><div class="card"><small>Ausentes</small><div class="num red">${absent}</div></div><div class="card"><small>Llegadas tarde</small><div class="num yellow">${late}</div></div><div class="card"><small>Trabajos pendientes</small><div class="num blue">${pending}</div></div></div>
+    <div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Materia</th><th>Asistencia</th><th>Trabajo</th><th>Observación</th></tr></thead><tbody>${attendanceRows||'<tr><td colspan="5">Todavía no hay registros de asistencia o trabajos para este alumno.</td></tr>'}</tbody></table></div>
+    <h3 style="margin-top:20px">Convivencia y seguimiento</h3>
+    <div class="grade-table-wrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Tipo</th><th>Descripción</th><th>Seguimiento</th></tr></thead><tbody>${behaviorRows||'<tr><td colspan="4">No hay registros de comportamiento cargados.</td></tr>'}</tbody></table></div>
+    <div class="grade-table-wrap" style="margin-top:10px"><table class="report-table"><thead><tr><th>Fecha</th><th>Registro</th><th>Detalle</th></tr></thead><tbody>${sanctionRows||'<tr><td colspan="3">No hay partes o sanciones registradas.</td></tr>'}</tbody></table></div>
+    <p class="muted">Ficha informativa generada con los datos disponibles en EduGestión. Los datos no cargados aparecen como vacíos o sin registros; no se completan automáticamente.</p>
+   </div>`;
+  document.getElementById("printProfile").disabled=false;
+  document.getElementById("exportProfile").disabled=false;
+ };
+ document.getElementById("printProfile").onclick=()=>{
+  const sheet=document.getElementById("profileSheet");if(!sheet)return;
+  const w=window.open("","_blank");if(!w){alert("Permití las ventanas emergentes para imprimir la ficha.");return}
+  w.document.write(`<!doctype html><html lang="es"><meta charset="utf-8"><title>Ficha de alumno - EduGestión</title><style>body{font:13px Arial;color:#17243a;padding:22px}h2{margin:8px 0}.bulletin-head{display:flex;justify-content:space-between;border-bottom:2px solid #243f67;padding-bottom:14px;margin-bottom:20px}.bulletin-logo{font-size:22px;font-weight:bold;border:2px solid #243f67;border-radius:12px;padding:12px;height:max-content}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.card{border:1px solid #ccd5e2;padding:8px}table{width:100%;border-collapse:collapse;margin-bottom:14px}th,td{border:1px solid #ccd5e2;padding:6px;text-align:left;font-size:11px}th{background:#eef2f8}.muted{color:#667085;font-size:10px}@media print{body{padding:0}}</style>${sheet.outerHTML}<script>window.onload=()=>window.print()<\/script></html>`);
+  w.document.close();
+ };
+ document.getElementById("exportProfile").onclick=()=>{
+  if(!selectedName)return;
+  const rows=[["Alumno/a","Curso / materia","Nota final 1","Orientador A1","Nota final 2","Orientador A2","Estado","Observaciones","Adeuda"]];
+  selectedRows.forEach(x=>rows.push([selectedName,x.materia,x.r.nota||"",x.r.orientadora||"",x.r.nota2||"",x.r.orientadora2||"",x.estado,x.r.observaciones||"",x.r.adeuda||""]));
+  const csv="\ufeff"+rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+  const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"})),a=document.createElement("a");a.href=url;a.download=`ficha_${selectedName.replace(/[^a-z0-9]+/gi,"_")}.csv`;a.click();URL.revokeObjectURL(url);
+ };
+}
+
+function settings(){
+ document.getElementById("app").innerHTML=`<div class="notice">Personalizá el nombre de la institución, el ciclo lectivo, las iniciales del logo y el color principal. Los cambios se guardan en este dispositivo.</div><section class="panel"><h3>Identidad institucional</h3><form id="settingsForm" class="event-form"><label>Nombre de la escuela<input name="escuela" maxlength="90" value="${esc(SETTINGS.escuela)}" required></label><label>Ciclo lectivo<input name="ciclo" maxlength="30" value="${esc(SETTINGS.ciclo)}" required></label><label>Texto del logo / iniciales<input name="logo" maxlength="8" value="${esc(SETTINGS.logo)}"></label><label>Color principal<input name="acento" type="color" value="${esc(SETTINGS.acento)}"></label><button class="btn event-wide" type="submit">Guardar personalización</button></form><div class="tools"><button class="btn gray" id="resetSettings">Restablecer personalización</button></div></section>`;
+ document.getElementById("settingsForm").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);SETTINGS={escuela:String(f.get("escuela")||"EduGestión").trim(),ciclo:String(f.get("ciclo")||"2026–2027").trim(),logo:String(f.get("logo")||"EG").trim(),acento:String(f.get("acento")||"#4263eb")};saveSettings();show("settings");};
+ document.getElementById("resetSettings").onclick=()=>{SETTINGS={escuela:"EduGestión",ciclo:"2026–2027",logo:"EG",acento:"#4263eb"};saveSettings();show("settings")};
+}
+function history(){document.getElementById("app").innerHTML=`<section class="panel"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap"><div><h3>Historial de cambios recientes</h3><p class="muted">Se registran modificaciones hechas desde esta versión en este navegador.</p></div><button class="btn gray" id="clearHistory">Borrar historial</button></div><div class="history-list">${HIST.length?HIST.map(h=>`<div class="history-item"><b>${esc(h.alumno||"Registro")}</b> · ${esc(h.materia)}<div class="muted">${esc(h.fecha)} · ${esc(h.campo)}: ${esc(h.valor)}</div></div>`).join(""):`<p class="muted">Todavía no hay cambios registrados desde que se activó el historial.</p>`}</div></section>`;document.getElementById("clearHistory").onclick=()=>{if(confirm("¿Borrar el historial de cambios?")){HIST=[];localStorage.removeItem(HISTKEY);history()}}}
+function backup(){
+ document.getElementById("app").innerHTML=`<section class="panel"><h3>Copias de seguridad</h3><div class="notice">La copia completa incluye notas, orientadoras, observaciones, unidades, historial, convivencia, asistencia, trabajos, registro de clases y eventos personalizados del calendario.</div><p>Los cambios se guardan en este navegador y dispositivo. Para compartir o trasladar los datos, descargá una copia y restaurala en el otro dispositivo. Esto no activa sincronización automática en la nube.</p><div class="tools"><button class="btn" id="export">Descargar copia completa</button><label class="btn gray" for="import">Restaurar copia</label><input id="import" type="file" accept="application/json" style="display:none"></div><button class="btn redbtn" id="reset">Restaurar datos iniciales</button></section>`;
+ document.getElementById("export").onclick=()=>{
+  const backupData={version:5,datos:D,historial:HIST,unidades:U,convivencia:CONV,asistenciaTrabajos:TRACK,registroClases:CLASSLOG,eventosCalendario:CUSTOM_EVENTS,personalizacion:SETTINGS};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(backupData,null,2)],{type:"application/json"})),a=document.createElement("a");a.href=url;a.download="copia_completa_edugestion.json";a.click();URL.revokeObjectURL(url);
+ };
+ document.getElementById("import").onchange=async e=>{
+  try{
+   const file=e.target.files&&e.target.files[0];if(!file)return;
+   const x=JSON.parse(await file.text());
+   if(!x||typeof x!=="object")throw new Error("Copia vacía");
+   const candidate=x.datos||x;
+   if(!candidate||typeof candidate!=="object"||Array.isArray(candidate)||!Object.keys(candidate).length)throw new Error("Estructura inválida");
+   for(const [subject,students] of Object.entries(candidate)){
+    if(typeof subject!=="string"||!Array.isArray(students)||students.some(st=>!st||typeof st!=="object"||Array.isArray(st)||typeof st.nombre!=="string"))throw new Error("Lista de alumnos inválida");
+   }
+   if(!confirm("¿Reemplazar los datos actuales con esta copia?"))return;
+   D=candidate;HIST=Array.isArray(x.historial)?x.historial:[];
+   if(x.unidades&&typeof x.unidades==="object")U=x.unidades;
+   if(x.convivencia&&typeof x.convivencia==="object")CONV={temas:{},comportamientos:{},sanciones:{},...x.convivencia};
+   if(x.asistenciaTrabajos&&typeof x.asistenciaTrabajos==="object")TRACK=x.asistenciaTrabajos;
+   if(x.registroClases&&typeof x.registroClases==="object")CLASSLOG=x.registroClases;
+   if(Array.isArray(x.eventosCalendario))CUSTOM_EVENTS=x.eventosCalendario;
+   if(x.personalizacion&&typeof x.personalizacion==="object")SETTINGS={...SETTINGS,...x.personalizacion};saveSettings();
+   save();saveUnits();saveConv();saveTrack();saveClassLog();saveCustomEvents();
+   localStorage.setItem(HISTKEY,JSON.stringify(HIST));show("home");
+  }catch(err){alert("No se pudo restaurar: el archivo no tiene una copia válida de EduGestión.")}
+ };
+ document.getElementById("reset").onclick=()=>{
+  if(confirm("¿Restaurar los datos iniciales? Se borrarán los cambios y registros guardados en este navegador.")){
+   D=structuredClone(ORIGINAL);HIST=[];U={};ensureUnits();CONV={temas:{},comportamientos:{},sanciones:{}};TRACK={};CLASSLOG={};CUSTOM_EVENTS=[];SETTINGS={escuela:"EduGestión",ciclo:"2026–2027",logo:"EG",acento:"#4263eb"};localStorage.removeItem(SETTINGSKEY);applySettings();
+   [HISTKEY,UNITKEY,CONVKEY,TRACKKEY,CLASSKEY,CALKEY].forEach(k=>localStorage.removeItem(k));
+   save();saveUnits();saveConv();saveTrack();saveClassLog();saveCustomEvents();show("home");
+  }
+ };
+}
+nav();
+applySettings();
+document.getElementById("enterPanel").onclick=()=>{document.getElementById("startScreen").style.display="none";document.getElementById("mainLayout").style.display="grid";show("home");window.scrollTo(0,0)};
+</script></body></html>
